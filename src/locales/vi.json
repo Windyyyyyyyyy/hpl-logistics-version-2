@@ -1,0 +1,11 @@
+{
+  "header": {
+    "navigation": {
+      "about": "Giới thiệu",
+      "services": "Dịch vụ",
+      "news": "Tin tức",
+      "contact": "Liên hệ",
+      "tracking": "Tracking"
+    }
+  }
+}

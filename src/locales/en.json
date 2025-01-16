@@ -1,0 +1,24 @@
+{
+  "header": {
+    "navigation": {
+      "about": "About",
+      "services": {
+        "label": "Services",
+        "subItems": {
+          "air": "Air freight",
+          "sea": "Sea freight",
+          "land": "Land freight"
+        }
+      },
+      "news": "News",
+      "contact": {
+        "label": "Contact",
+        "subItems": {
+          "quotation": "Request a quotation",
+          "recruitment": "Recruitment"
+        }
+      },
+      "tracking": "Tracking"
+    }
+  }
+}
