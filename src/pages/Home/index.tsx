@@ -24,6 +24,9 @@
 // };
 
 import CardInfo from './components/CardInfo';
+import Location from './components/Location';
+import Map from './components/Map';
+import PartnerMarquee from './components/PartnerMarquee';
 
 // export default Home;
 
@@ -55,11 +58,33 @@ const Home = () => {
       </section>
       <section className="lg:-translate-y-[50%]">
         <div className="py-10 lg:py-0">
-          <div className="mx-auto h-full w-full max-w-[1170px] px-[15px]">
+          <div className="mx-auto h-full w-full max-w-[1170px]">
             <div className="flex flex-wrap justify-center">
               <CardInfo label="Order" number="3597" />
               <CardInfo label="Customer" number="1576" />
               <CardInfo label="Mass" number="8500" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="mb-24 mt-16">
+        <div className="mx-auto w-full max-w-[1170px] px-[15px]">
+          <div className="overflow-hidden">
+            <PartnerMarquee />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className="mx-auto w-full max-w-[1170px] px-[15px]">
+          <div className="w-full">
+            <div className="text-center text-3xl font-bold text-black lg:text-4xl">
+              <p>Our Location</p>
+            </div>
+            <div className="mt-12 w-full">
+              <div className="flex">
+                <Map />
+                <Location />
+              </div>
             </div>
           </div>
         </div>

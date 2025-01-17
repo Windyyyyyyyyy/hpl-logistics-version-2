@@ -6,8 +6,8 @@ import Facebook from '../../../assets/icons/facebook.svg';
 const Footer = () => {
   return (
     <footer>
-      <div className="bg-secondary-one relative text-white">
-        <div className="mx-auto w-full max-w-[1170px] px-[15px]">
+      <div className="relative bg-secondary-one text-white">
+        <div className="mx-auto w-full max-w-[1170px]">
           <div className="flex flex-row flex-wrap py-12">
             <div className="w-full px-[15px] pb-7 lg:w-2/5">
               <aside className="flex flex-col items-center lg:items-start">
@@ -40,7 +40,7 @@ const Footer = () => {
                 <div className="mb-6 text-xl font-semibold">
                   <h3>Quick Links</h3>
                 </div>
-                <ul className="text-center lg:text-start">
+                <ul className="text-center text-base lg:text-start">
                   <li className="py-2">
                     <Link to="/" className="hover:text-secondary-two">
                       About Us
@@ -69,7 +69,7 @@ const Footer = () => {
                 <div className="mb-6 text-xl font-semibold">
                   <h3>Services</h3>
                 </div>
-                <ul className="text-center lg:text-start">
+                <ul className="text-center text-base lg:text-start">
                   <li className="py-2">
                     <Link to="/" className="hover:text-secondary-two">
                       Sea Freight
@@ -93,7 +93,7 @@ const Footer = () => {
                 <div className="mb-6 text-center text-xl font-semibold lg:text-start">
                   <h3>Contact</h3>
                 </div>
-                <div>
+                <div className="text-base">
                   <p className="py-2">
                     585 Tung Thien Vuong, Ward 12, District 8, Ho Chi Minh City
                   </p>

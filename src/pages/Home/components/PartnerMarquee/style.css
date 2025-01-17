@@ -1,0 +1,7 @@
+.mySwiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.mySwiper .swiper-wrapper .swiper-slide {
+  width: fit-content;
+}
