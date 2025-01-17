@@ -69,7 +69,7 @@ const Header = () => {
     {
       key: 'tracking',
       label: t('header.navigation.tracking'),
-      path: '/',
+      path: '/tracking',
     },
   ];
 
