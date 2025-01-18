@@ -24,9 +24,13 @@
 // };
 
 import CardInfo from './components/CardInfo';
+import Introduce from './components/Introduce';
 import Location from './components/Location';
 import Map from './components/Map';
 import PartnerMarquee from './components/PartnerMarquee';
+import ServiceImage from '../../assets/images/services.webp';
+import CardServices from './components/CardServices';
+import Plane from '../../assets/icons/plane.svg';
 
 // export default Home;
 
@@ -67,6 +71,19 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section>
+        <div className="mx-auto w-full max-w-[1170px] px-[15px]">
+          <div className="text-center">
+            <h2 className="text-3xl font-bold md:text-5xl">Hop Phat Logistics</h2>
+            <p className="mt-2 text-base font-semibold text-primary md:text-xl">
+              Efficiency - Safety - Reliability
+            </p>
+          </div>
+          <div className="mt-12">
+            <Introduce />
+          </div>
+        </div>
+      </section>
       <section className="mb-24 mt-16">
         <div className="mx-auto w-full max-w-[1170px] px-[15px]">
           <div className="overflow-hidden">
@@ -74,16 +91,57 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="mb-24">
+        <div className="bg-secondary-one py-[80px]">
+          <div className="w-full px-[15px] md:ml-[59px]">
+            <div className="flex w-full flex-col md:flex-row">
+              <div className="flex w-full flex-col md:w-3/5">
+                <div className="text-white">
+                  <h2 className="text-3xl font-bold lg:text-4xl">Our Services</h2>
+                  <p className="text-lg">
+                    Hop Phat Logistics offers some services related on the transportation process
+                  </p>
+                </div>
+                <div className="mt-10 flex h-full flex-col flex-wrap md:-ml-[14px] md:flex-row">
+                  <CardServices
+                    icon={Plane}
+                    title="Service 1"
+                    desc="Providing Sea Freight Transportation Services"
+                  />
+                  <CardServices
+                    icon={Plane}
+                    title="Service 1"
+                    desc="Providing Sea Freight Transportation Services"
+                  />
+                  <CardServices
+                    icon={Plane}
+                    title="Service 1"
+                    desc="Providing Sea Freight Transportation Services"
+                  />
+                  <CardServices
+                    icon={Plane}
+                    title="Service 1"
+                    desc="Providing Sea Freight Transportation Services"
+                  />
+                </div>
+              </div>
+              <div className="mt-8 w-full md:mt-0 md:w-2/5 md:pl-4">
+                <img src={ServiceImage} alt="services image" className="h-full rounded-lg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="mb-24">
         <div className="mx-auto w-full max-w-[1170px] px-[15px]">
           <div className="w-full">
             <div className="text-center text-3xl font-bold text-black lg:text-4xl">
               <p>Our Location</p>
             </div>
             <div className="mt-12 w-full">
-              <div className="flex">
-                <Map />
+              <div className="flex flex-col md:flex-row">
                 <Location />
+                <Map />
               </div>
             </div>
           </div>
