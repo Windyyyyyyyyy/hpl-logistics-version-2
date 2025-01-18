@@ -10,16 +10,16 @@ const Footer = () => {
         <div className="mx-auto w-full max-w-[1170px]">
           <div className="flex flex-row flex-wrap py-12">
             <div className="w-full px-[15px] pb-7 lg:w-2/5">
-              <aside className="flex flex-col items-center lg:items-start">
-                <div className="mb-6 h-full w-3/4 text-center lg:w-2/4">
+              <aside className="flex flex-col">
+                <div className="mb-6 h-full w-3/4 sm:w-2/4">
                   <Link to="/">
                     <img src={WhiteLogo} alt="Logo HPL" className="object-cover" />
                   </Link>
                 </div>
-                <div className="text-3xl font-bold">
-                  <h1 className="text-center uppercase">Hop Phat Logistics</h1>
+                <div className="text-2xl font-bold sm:text-3xl">
+                  <h1 className="uppercase">Hop Phat Logistics</h1>
                 </div>
-                <div className="text-center">
+                <div className="">
                   <h3>Hop Phat - Cooperation and development</h3>
                 </div>
                 <div className="mt-6 flex">
@@ -36,11 +36,11 @@ const Footer = () => {
               </aside>
             </div>
             <div className="w-full px-[15px] pb-7 2sm:w-2/4 lg:w-1/5 lg:pb-0">
-              <aside className="flex flex-col items-center lg:items-start">
+              <aside className="flex flex-col">
                 <div className="mb-6 text-xl font-semibold">
                   <h3>Quick Links</h3>
                 </div>
-                <ul className="text-center text-base lg:text-start">
+                <ul className="text-base">
                   <li className="py-2">
                     <Link to="/" className="hover:text-secondary-two">
                       About Us
@@ -65,11 +65,11 @@ const Footer = () => {
               </aside>
             </div>
             <div className="w-full px-[15px] pb-7 2sm:w-2/4 lg:w-1/5 lg:pb-0">
-              <aside className="flex flex-col items-center lg:items-start">
+              <aside className="flex flex-col items-start">
                 <div className="mb-6 text-xl font-semibold">
                   <h3>Services</h3>
                 </div>
-                <ul className="text-center text-base lg:text-start">
+                <ul className="text-base">
                   <li className="py-2">
                     <Link to="/" className="hover:text-secondary-two">
                       Sea Freight
@@ -90,7 +90,7 @@ const Footer = () => {
             </div>
             <div className="px-[15px] sm:w-full lg:w-1/5">
               <aside className="flex flex-col">
-                <div className="mb-6 text-center text-xl font-semibold lg:text-start">
+                <div className="mb-6 text-xl font-semibold">
                   <h3>Contact</h3>
                 </div>
                 <div className="text-base">
