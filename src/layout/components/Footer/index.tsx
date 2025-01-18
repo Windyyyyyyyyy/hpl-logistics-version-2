@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="flex flex-row flex-wrap py-12">
             <div className="w-full px-[15px] pb-7 lg:w-2/5">
               <aside className="flex flex-col">
-                <div className="mb-6 h-full w-3/4 sm:w-2/4">
+                <div className="mb-6 h-full w-full 2sm:w-2/5 lg:w-2/4">
                   <Link to="/">
                     <img src={WhiteLogo} alt="Logo HPL" className="object-cover" />
                   </Link>

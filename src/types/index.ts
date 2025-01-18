@@ -8,3 +8,14 @@ export interface CardServices {
   title: string;
   desc: string;
 }
+
+export interface Route {
+  label: string;
+  stringUrl: string;
+  active: boolean;
+}
+
+export interface Banner {
+  title: string;
+  routes: Array<Route>;
+}
