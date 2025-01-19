@@ -1,6 +1,6 @@
 import type { Banner } from '../../types';
-import WhiteChevronRight from '../../assets/icons/white-chevron-right.svg';
 import { Link } from 'react-router';
+import { ChevronRight } from 'lucide-react';
 
 const Banner = ({ ...props }: Banner) => {
   return (
@@ -25,8 +25,8 @@ const Banner = ({ ...props }: Banner) => {
                 >
                   <Link to={`/${route.stringUrl}`}>{route.label}</Link>
                   {index < props.routes.length - 1 && (
-                    <div className="translate-y-[5%]">
-                      <img src={WhiteChevronRight} alt="icon" />
+                    <div className="translate-y-[5%] font-normal">
+                      <ChevronRight strokeWidth={2} />
                     </div>
                   )}
                 </li>

@@ -1,11 +1,7 @@
 import { Link } from 'react-router';
-import WhiteSearch from '../../../assets/icons/white-search.svg';
-import BlackSearch from '../../../assets/icons/black-search.svg';
-import Close from '../../../assets/icons/close.svg';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import WhiteChevronDown from '../../../assets/icons/white-chevron-down.svg';
-import BlackChevronDown from '../../../assets/icons/black-chevron-down.svg';
+import { ChevronDown, Search, X } from 'lucide-react';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -139,19 +135,11 @@ const Header = () => {
                         {/* Icon */}
                         {item.subitems && (
                           <div className="flex h-5 w-5">
-                            {scrolled ? (
-                              <img
-                                src={BlackChevronDown}
-                                alt="chevron down"
-                                className="ml-1 mt-[3px]"
-                              />
-                            ) : (
-                              <img
-                                src={WhiteChevronDown}
-                                alt="chevron down"
-                                className="ml-1 mt-[3px]"
-                              />
-                            )}
+                            <ChevronDown
+                              color={scrolled ? '#000000' : '#ffffff'}
+                              strokeWidth={3}
+                              className="ml-1"
+                            />
                           </div>
                         )}
 
@@ -181,11 +169,7 @@ const Header = () => {
             <div className="flex items-center">
               {/* Search */}
               <div className="mr-2 flex h-6 w-6">
-                <img
-                  src={`${scrolled ? BlackSearch : WhiteSearch}`}
-                  alt="search"
-                  className="cursor-pointer"
-                />
+                <Search color={`${scrolled ? '#000000' : '#ffffff'}`} />
               </div>
 
               {/* Language Mode */}
@@ -234,7 +218,7 @@ const Header = () => {
               className="absolute right-0 top-0 cursor-pointer bg-primary p-3"
               onClick={handleOpen}
             >
-              <img src={Close} alt="close" height={20} width={20} />
+              <X color="#ffffff" strokeWidth={2.5} />
             </div>
             <div>
               <div>
@@ -269,11 +253,7 @@ const Header = () => {
                         </Link>
                         {item.subitems && (
                           <div className="flex h-5 w-5">
-                            <img
-                              src={BlackChevronDown}
-                              alt="chevron down"
-                              className="ml-1 mt-[3px]"
-                            />
+                            <ChevronDown strokeWidth={3} />
                           </div>
                         )}
                         <span className="absolute bottom-2 right-0 h-[2px] w-0 rounded bg-primary transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full"></span>

@@ -9,9 +9,9 @@ const CardServices = ({ ...props }: CardServices) => {
   }, []);
   return (
     <div className="w-full pt-7 md:w-1/2 md:px-[14px]" data-aos="zoom-in">
-      <div className="relative h-full overflow-hidden rounded border-[0.1px] px-8 py-8">
+      <div className="relative h-full overflow-hidden rounded border-[0.2px] border-gray-200 px-8 py-8">
         <div className="absolute -right-7 -top-9 h-24 w-24 rounded-[50%] bg-primary">
-          <img src={props.icon} alt="service icon" className="absolute bottom-5 left-6" />
+          {<props.icon className="absolute bottom-5 left-6" color="white" size={26} />}
         </div>
         <div className="flex flex-col text-white">
           <div className="mb-5">

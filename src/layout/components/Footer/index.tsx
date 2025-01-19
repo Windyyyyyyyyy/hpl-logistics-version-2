@@ -1,7 +1,6 @@
 import { Link } from 'react-router';
 import WhiteLogo from '../../../assets/images/white-hpl-logo.png';
-import LinkedIn from '../../../assets/icons/linkedin.svg';
-import Facebook from '../../../assets/icons/facebook.svg';
+import { Facebook, Linkedin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -27,10 +26,10 @@ const Footer = () => {
                     to="/"
                     className="mr-3 transition-all duration-300 hover:translate-y-[-5px]"
                   >
-                    <img src={Facebook} alt="facebook" />
+                    <Facebook />
                   </Link>
                   <Link to="/" className="transition-all duration-300 hover:translate-y-[-5px]">
-                    <img src={LinkedIn} alt="linkdin" />
+                    <Linkedin />
                   </Link>
                 </div>
               </aside>

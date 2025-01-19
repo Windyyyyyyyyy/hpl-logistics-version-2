@@ -30,7 +30,7 @@ import Map from './components/Map';
 import PartnerMarquee from './components/PartnerMarquee';
 import ServiceImage from '../../assets/images/services.webp';
 import CardServices from './components/CardServices';
-import Plane from '../../assets/icons/plane.svg';
+import { Plane } from 'lucide-react';
 
 // export default Home;
 
@@ -92,8 +92,8 @@ const Home = () => {
         </div>
       </section>
       <section className="mb-24">
-        <div className="bg-secondary-one py-[80px]">
-          <div className="w-full px-[15px] md:ml-[59px]">
+        <div className="flex bg-secondary-one py-[80px]">
+          <div className="w-full px-[15px] lg:ml-[59px]">
             <div className="flex w-full flex-col md:flex-row">
               <div className="flex w-full flex-col md:w-3/5">
                 <div className="text-white">
@@ -125,8 +125,12 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className="mt-8 w-full md:mt-0 md:w-2/5 md:pl-4">
-                <img src={ServiceImage} alt="services image" className="h-full rounded-lg" />
+              <div className="mt-8 md:mt-0 md:w-2/5 md:pl-4">
+                <img
+                  src={ServiceImage}
+                  alt="services image"
+                  className="h-full w-full rounded-lg object-cover"
+                />
               </div>
             </div>
           </div>

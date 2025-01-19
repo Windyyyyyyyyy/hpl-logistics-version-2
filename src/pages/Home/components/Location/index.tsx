@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
-import LocationIcon from '../../../../assets/icons/location.svg';
+
 import initAOS from '../../../../utils/aos';
+import { MapPinnedIcon } from 'lucide-react';
 
 const Location = () => {
   useEffect(() => {
@@ -11,7 +12,7 @@ const Location = () => {
     <div className="w-full" data-aos="fade-right">
       <div className="relative bg-gray-100 p-8 pt-8">
         <div className="absolute top-0 inline-block translate-y-[-50%] rounded-[50%] bg-primary p-3">
-          <img src={LocationIcon} alt="location" />
+          <MapPinnedIcon color="white" />
         </div>
         <div>
           <div className="pt-4 text-lg font-semibold md:text-2xl">

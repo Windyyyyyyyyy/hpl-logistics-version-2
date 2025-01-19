@@ -16,12 +16,12 @@ const Tracking = () => {
           title="About"
           routes={[
             { label: 'Home', stringUrl: '', active: false },
-            { label: 'About', stringUrl: 'about', active: true },
+            { label: 'Tracking', stringUrl: 'tracking', active: true },
           ]}
         />
       </div>
-      <div className="flex min-h-screen items-center justify-center bg-gray-50">
-        <div className="mx-4 w-full max-w-2xl">
+      <div className="mx-auto max-w-[1170px] bg-gray-50 px-[15px] py-[120px]">
+        <div className="mx-auto w-full lg:max-w-2xl">
           {/* Card Container */}
           <div className="space-y-6 rounded-lg bg-gray-100 p-8 shadow-sm">
             {/* Header */}
@@ -39,20 +39,20 @@ const Tracking = () => {
                   Container Number / Bill of Lading Code
                   <span className="text-red-500">*</span>
                 </label>
-                <div className="mt-2 flex gap-4">
+                <div className="mt-2 flex flex-col 2sm:flex-row 2sm:gap-4">
                   <input
                     id="tracking"
                     name="tracking"
                     type="text"
                     required
-                    className="relative block w-full appearance-none rounded border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-green-500 focus:outline-none focus:ring-2 focus:ring-green-500 sm:text-sm"
+                    className="relative block w-full appearance-none rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-500 focus:z-10 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary"
                     placeholder="Enter Container Number / Bill of Lading Code"
                     value={trackingNumber}
                     onChange={(e) => setTrackingNumber(e.target.value)}
                   />
                   <button
                     type="submit"
-                    className="inline-flex items-center gap-2 rounded-md border border-transparent bg-green-600 px-6 py-2 text-sm font-medium text-white shadow-sm transition-colors duration-200 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                    className="inline-flex items-center justify-center gap-2 rounded-md border border-transparent bg-primary px-6 py-2 text-sm font-medium text-white shadow-sm transition-colors duration-200 hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 max-2sm:mt-3"
                   >
                     Search
                   </button>

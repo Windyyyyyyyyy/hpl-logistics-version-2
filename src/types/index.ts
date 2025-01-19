@@ -1,10 +1,13 @@
+import { LucideProps } from 'lucide-react';
+import { ForwardRefExoticComponent, RefAttributes } from 'react';
+
 export interface CardInfo {
   label: string;
   number: string;
 }
 
 export interface CardServices {
-  icon: string;
+  icon: ForwardRefExoticComponent<Omit<LucideProps, 'ref'> & RefAttributes<SVGSVGElement>>;
   title: string;
   desc: string;
 }
