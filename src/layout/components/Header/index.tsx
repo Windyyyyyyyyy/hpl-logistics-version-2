@@ -20,22 +20,27 @@ const Header = () => {
     {
       key: 'services',
       label: t('header.navigation.services.label'),
-      path: '/services',
+      path: '/services/sea-freight',
       subitems: [
         {
           key: 'air',
           label: t('header.navigation.services.subItems.air'),
-          path: '/services/air',
+          path: '/services/air-freight',
         },
         {
           key: 'sea',
           label: t('header.navigation.services.subItems.sea'),
-          path: '/services/sea',
+          path: '/services/sea-freight',
         },
         {
           key: 'land',
           label: t('header.navigation.services.subItems.land'),
-          path: '/services/land',
+          path: '/services/land-transportation',
+        },
+        {
+          key: 'support',
+          label: t('header.navigation.services.subItems.support'),
+          path: '/services/support-services',
         },
       ],
     },
@@ -244,15 +249,15 @@ const Header = () => {
                 <ul>
                   {navigationItems.map((item) => (
                     <li key={item.key}>
-                      <div
-                        className="group relative flex cursor-pointer items-center justify-between py-[10px] text-lg font-semibold"
-                        onClick={() => handleShow(item.key)}
-                      >
-                        <Link to={item.path} onClick={handleOpen}>
+                      <div className="group relative flex cursor-pointer items-center justify-between py-[10px] text-lg font-semibold">
+                        <Link to={item.path} onClick={handleOpen} className="w-2/3">
                           {item.label}
                         </Link>
                         {item.subitems && (
-                          <div className="flex h-5 w-5">
+                          <div
+                            className="flex h-5 w-1/3 justify-end"
+                            onClick={() => handleShow(item.key)}
+                          >
                             <ChevronDown strokeWidth={3} />
                           </div>
                         )}
@@ -267,7 +272,10 @@ const Header = () => {
                               <Link
                                 to={subitem.path}
                                 className="group relative flex py-2 font-medium hover:text-primary"
-                                onClick={handleOpen}
+                                onClick={() => {
+                                  handleShow(item.key);
+                                  handleOpen();
+                                }}
                               >
                                 {subitem.label}
                                 <span className="absolute bottom-1 right-0 h-[3px] w-0 rounded bg-primary transition-all duration-500 ease-in-out group-hover:left-0 group-hover:w-full"></span>

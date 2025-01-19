@@ -25,8 +25,8 @@ const Contact = () => {
           ]}
         />
       </div>
-      <div className="flex min-h-screen items-center justify-center bg-white p-4">
-        <div className="w-full max-w-4xl rounded-lg bg-gray-100 p-6">
+      <div className="mx-auto max-w-[1170px] bg-white px-[15px] py-[60px] lg:py-[120px]">
+        <div className="w-full rounded-lg bg-gray-100 p-6">
           <h1 className="mb-6 text-center text-xl text-green-600">Freight Rate Consultation</h1>
 
           <form className="space-y-6">

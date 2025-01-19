@@ -7,7 +7,8 @@
         "subItems": {
           "air": "Air freight",
           "sea": "Sea freight",
-          "land": "Land freight"
+          "land": "Land freight",
+          "support": "Support Services"
         }
       },
       "news": "News",
