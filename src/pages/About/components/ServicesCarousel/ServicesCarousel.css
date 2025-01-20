@@ -1,0 +1,8 @@
+.mySwiper {
+  height: 100%;
+  margin: 0 -15px;
+  padding-bottom: 50px;
+}
+.mySwiper .swiper-pagination {
+  bottom: 0;
+}

@@ -213,7 +213,7 @@ const Header = () => {
           <div className="flex h-full w-full flex-col px-5 py-11 pt-0">
             {/* Logo HPL */}
             <div className="flex w-2/5">
-              <Link to="/" className="py-4">
+              <Link to="/" className="py-4" onClick={handleOpen}>
                 <img src="/hpl-logo.png" alt="HPL logo" />
               </Link>
             </div>

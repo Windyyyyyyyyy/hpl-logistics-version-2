@@ -4,7 +4,7 @@ import NewsCard from '../NewsCard';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import './style.css';
+import './NewsCarousel.css';
 import { Link } from 'react-router';
 import { ChevronRight } from 'lucide-react';
 
@@ -14,7 +14,7 @@ const NewsCarousel = ({ ...props }: NewsCarouselProps) => {
       <div className="mb-7 text-2xl font-bold md:text-4xl">
         <h2>{props.title}</h2>
       </div>
-      <div className="flex w-full">
+      <div className="swiper-container w-full">
         <Swiper
           pagination={{
             clickable: true,

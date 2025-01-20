@@ -41,22 +41,22 @@ const Footer = () => {
                 </div>
                 <ul className="text-base">
                   <li className="py-2">
-                    <Link to="/" className="hover:text-secondary-two">
+                    <Link to="/about" className="hover:text-secondary-two">
                       About Us
                     </Link>
                   </li>
                   <li className="py-2">
-                    <Link to="/" className="hover:text-secondary-two">
+                    <Link to="/news" className="hover:text-secondary-two">
                       News
                     </Link>
                   </li>
                   <li className="py-2">
-                    <Link to="/" className="hover:text-secondary-two">
+                    <Link to="/tracking" className="hover:text-secondary-two">
                       Tracking
                     </Link>
                   </li>
                   <li className="py-2">
-                    <Link to="/" className="hover:text-secondary-two">
+                    <Link to="/about" className="hover:text-secondary-two">
                       Our Partner
                     </Link>
                   </li>
@@ -70,17 +70,17 @@ const Footer = () => {
                 </div>
                 <ul className="text-base">
                   <li className="py-2">
-                    <Link to="/" className="hover:text-secondary-two">
+                    <Link to="/services/sea-freight" className="hover:text-secondary-two">
                       Sea Freight
                     </Link>
                   </li>
                   <li className="py-2">
-                    <Link to="/" className="hover:text-secondary-two">
-                      Land Freight
+                    <Link to="/services/land-transportation" className="hover:text-secondary-two">
+                      Land Transportation
                     </Link>
                   </li>
                   <li className="py-2">
-                    <Link to="" className="hover:text-secondary-two">
+                    <Link to="/services/air-freight" className="hover:text-secondary-two">
                       Air Freight
                     </Link>
                   </li>
