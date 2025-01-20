@@ -6,7 +6,7 @@ export interface CardInfo {
   number: string;
 }
 
-export interface CardServices {
+export interface CardServicesProps {
   icon: ForwardRefExoticComponent<Omit<LucideProps, 'ref'> & RefAttributes<SVGSVGElement>>;
   title: string;
   desc: string;
@@ -21,4 +21,17 @@ export interface Route {
 export interface Banner {
   title: string;
   routes: Array<Route>;
+}
+
+export interface NewsCardProps {
+  date: string;
+  title: string;
+  imageUrl: string;
+  imageAlt?: string;
+  description: string;
+}
+
+export interface NewsCarouselProps {
+  title: string;
+  posts: Array<NewsCardProps>;
 }

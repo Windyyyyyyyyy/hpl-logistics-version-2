@@ -1,9 +1,9 @@
 import { Link } from 'react-router';
-import type { CardServices } from '../../../../types';
+import type { CardServicesProps } from '../../../../types';
 import { useEffect } from 'react';
 import initAOS from '../../../../utils/aos';
 
-const CardServices = ({ ...props }: CardServices) => {
+const CardServices = ({ ...props }: CardServicesProps) => {
   useEffect(() => {
     initAOS();
   }, []);

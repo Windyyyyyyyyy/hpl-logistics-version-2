@@ -1,12 +1,5 @@
 import React from 'react';
-
-interface NewsCardProps {
-  date: string;
-  title: string;
-  imageUrl: string;
-  imageAlt?: string;
-  description: string;
-}
+import type { NewsCardProps } from '../../../../types';
 
 const truncateText = (text: string, maxLength: number = 150) => {
   if (text.length <= maxLength) return text;
@@ -17,8 +10,8 @@ const NewsCard: React.FC<NewsCardProps> = ({
   date,
   title,
   imageUrl,
-  imageAlt = "News thumbnail",
-  description
+  imageAlt = 'News thumbnail',
+  description,
 }) => {
   // Format date to DD/MM/YYYY
   const formatDate = (dateString: string) => {
@@ -27,26 +20,21 @@ const NewsCard: React.FC<NewsCardProps> = ({
   };
 
   return (
-    <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+    <div className="h-full overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300 hover:shadow-lg">
       {/* Image container with aspect ratio */}
-      <div className="relative h-48 md:h-56 lg:h-64 overflow-hidden">
+      <div className="relative h-48 overflow-hidden md:h-56 lg:h-64">
         <img
           src={imageUrl}
           alt={imageAlt}
-          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
         />
       </div>
 
       {/* Content section */}
       <div className="p-4">
         {/* Date */}
-        <div className="flex items-center space-x-2 text-gray-500 mb-2">
-          <svg
-            className="w-4 h-4"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
+        <div className="mb-2 flex items-center space-x-2 text-gray-500">
+          <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -57,20 +45,15 @@ const NewsCard: React.FC<NewsCardProps> = ({
           <span className="text-sm">{formatDate(date)}</span>
         </div>
 
-
         {/* Title */}
-        <h2 className="text-xl font-semibold text-gray-800 mb-2 line-clamp-2 hover:text-blue-600 transition-colors duration-200">
+        <h2 className="mb-2 line-clamp-2 cursor-pointer text-lg font-semibold text-gray-800 transition-colors duration-200 hover:text-primary md:text-xl">
           {title}
         </h2>
         {/* Description */}
-        <p className="text-gray-600 text-sm line-clamp-3 mb-4">
-          {truncateText(description)}
-        </p>
-
+        <p className="mb-4 line-clamp-3 text-sm text-gray-600">{truncateText(description)}</p>
       </div>
     </div>
   );
 };
-
 
 export default NewsCard;

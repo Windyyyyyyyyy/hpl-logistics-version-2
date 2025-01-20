@@ -12,7 +12,12 @@ const About = () => {
           ]}
         />
       </div>
-      <div></div>
+      <div className="mx-auto w-full max-w-[1170px] px-[15px]">
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
     </section>
   );
 };
