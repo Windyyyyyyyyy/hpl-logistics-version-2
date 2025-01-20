@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import Banner from '../../components/Banner';
 import { NewsCardProps } from '../../types';
 import NewsCarousel from './components/NewsCarousel';
+import initAOS from '../../utils/aos';
 
 const News = () => {
   const NewsMarketCards: Array<NewsCardProps> = [
@@ -37,6 +39,11 @@ const News = () => {
         'The Government of Vietnam has issued Decree No. 26/2023/ND-CP, which outlines the new Export Tariff, Preferential Import Tariff, List of Goods, and specific tax rates such as absolute tax, mixed tax, and out-of-quota import tax.',
     },
   ];
+
+  useEffect(() => {
+    initAOS();
+  }, []);
+
   return (
     <section>
       <div>
@@ -51,10 +58,10 @@ const News = () => {
       <div className="py-[60px] lg:py-[120px]">
         <div className="mx-auto h-full w-full max-w-[1170px] px-[15px]">
           <div className="flex flex-col gap-16">
-            <div>
+            <div data-aos="fade-up">
               <NewsCarousel title="Market News" posts={NewsMarketCards} />
             </div>
-            <div>
+            <div data-aos="fade-up">
               <NewsCarousel title="Specialized News" posts={NewsMarketCards} />
             </div>
           </div>

@@ -1,4 +1,4 @@
-.mySwiper {
+.swiper-container .mySwiper {
   display: flex;
   align-items: center;
   height: 100%;
@@ -15,11 +15,11 @@
   bottom: 0;
 }
 
-.swiper-pagination-bullet {
+.mySwiper .swiper-pagination-bullet {
   width: 15px;
   height: 15px;
 }
 
-.swiper-pagination-bullet-active {
+.mySwiper .swiper-pagination-bullet-active {
   background-color: #833d0c;
 }

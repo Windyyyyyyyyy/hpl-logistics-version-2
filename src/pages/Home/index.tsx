@@ -27,7 +27,7 @@ import CardInfo from './components/CardInfo';
 import Introduce from './components/Introduce';
 import Location from './components/Location';
 import Map from './components/Map';
-import PartnerMarquee from './components/PartnerMarquee';
+import PartnerMarquee from '../../components/PartnerMarquee';
 import ServiceImage from '../../assets/images/services.webp';
 import CardServices from './components/CardServices';
 import { Plane } from 'lucide-react';

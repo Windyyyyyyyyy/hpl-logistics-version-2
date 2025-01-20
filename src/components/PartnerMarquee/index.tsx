@@ -35,7 +35,7 @@ const PartnerMarquee = () => {
       loop={true}
       autoplay={{ delay: 0, disableOnInteraction: false }}
       speed={7000}
-      className="mySwiper"
+      className="mySwiper px-[15px]"
     >
       {logoLst.map((logo, index) => (
         <SwiperSlide key={index}>
