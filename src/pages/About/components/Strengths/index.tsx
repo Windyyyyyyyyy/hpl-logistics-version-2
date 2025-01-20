@@ -2,10 +2,11 @@ import { CheckCheck, ClockArrowDown, Truck, Users } from 'lucide-react';
 const Strengths = () => {
   const titleStyle = 'font-bold mt-[20px] mb-[15px]';
   const descStyle = 'text-base';
+  const liStyle = 'w-full px-[15px] mb-[60px] md:mb-[0px]';
   return (
     <div className="w-full">
-      <ul className="-mx-[15px] flex">
-        <li className="w-full px-[15px]">
+      <ul className="-mx-[15px] flex flex-col md:flex-row">
+        <li className={liStyle}>
           <Truck size={50} />
           <h3 className={titleStyle}>The strength of Southeast Asia and China routes</h3>
           <p className={descStyle}>
@@ -15,7 +16,7 @@ const Strengths = () => {
             services) and deliver items with EXW, FOB, and CIF terms.
           </p>
         </li>
-        <li className="w-full px-[15px]">
+        <li className={liStyle}>
           <CheckCheck size={50} />
           <h3 className={titleStyle}> Handles all requests and orders of customers</h3>
           <p className={descStyle}>
@@ -23,7 +24,7 @@ const Strengths = () => {
             can meet all of its clients' needs.
           </p>
         </li>
-        <li className="w-full px-[15px]">
+        <li className={liStyle}>
           <Users size={50} />
           <h3 className={titleStyle}>With the experienced legal team</h3>
           <p className={descStyle}>
@@ -32,7 +33,7 @@ const Strengths = () => {
             certain that it can resolve any client issue as quickly as possible.
           </p>
         </li>
-        <li className="w-full px-[15px]">
+        <li className={liStyle}>
           <ClockArrowDown size={50} />
           <h3 className={titleStyle}>Save more time for customers</h3>
           <p className={descStyle}>

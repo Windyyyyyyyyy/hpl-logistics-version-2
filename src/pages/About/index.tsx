@@ -24,7 +24,7 @@ const About = () => {
       </div>
       <div className="mx-auto w-full max-w-[1170px] px-[15px]">
         <div className="pt-[60px] lg:pt-[120px]">
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center text-center">
             <h2 className="text-3xl font-bold md:text-5xl">Hop Phat Logistics</h2>
             <h4 className="mt-2 text-base font-semibold text-primary md:text-xl">
               Efficiency - Safety - Reliability
@@ -32,14 +32,14 @@ const About = () => {
           </div>
           <div className="mt-[60px]">
             <div className="mb-[60px]" data-aos="fade-in">
-              <p>
+              <p className="text-base sm:text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis iure id
                 accusamus, eaque magnam temporibus dolorem. Eaque praesentium error, sunt saepe
                 nesciunt aut adipisci maxime illum eveniet illo consequatur architecto!
               </p>
             </div>
             <div className="flex w-full justify-center" data-aos="fade-in">
-              <img src={HPLLogo} alt="logo" className="h-full w-1/2" />
+              <img src={HPLLogo} alt="logo" className="h-full w-full 2sm:w-1/2" />
             </div>
             <div className="mt-[120px]" data-aos="fade-up">
               <h2 className={h2Style}>Why Choose Us</h2>
