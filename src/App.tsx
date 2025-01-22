@@ -5,10 +5,12 @@ import SeaFreight from './pages/Services/components/SeaFreight';
 import AirFreight from './pages/Services/components/AirFreight';
 import LandTransportation from './pages/Services/components/LandTrans';
 import SupportServices from './pages/Services/components/SupportServices';
+import ScrollToTop from './components/ScrollToTop';
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />

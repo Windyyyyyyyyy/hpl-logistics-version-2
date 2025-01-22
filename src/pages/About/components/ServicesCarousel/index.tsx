@@ -42,7 +42,9 @@ const ServicesCarousel = () => {
       <div className="w-full">
         <Swiper
           slidesPerView={1}
-          pagination={true}
+          pagination={{
+            clickable: true,
+          }}
           modules={[Pagination]}
           breakpoints={{
             // when window width is >= 640px
