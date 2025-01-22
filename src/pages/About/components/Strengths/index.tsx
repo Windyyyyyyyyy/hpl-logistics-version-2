@@ -1,4 +1,5 @@
 import { CheckCheck, ClockArrowDown, Truck, Users } from 'lucide-react';
+
 const Strengths = () => {
   const titleStyle = 'font-bold mt-[20px] mb-[15px]';
   const descStyle = 'text-base';

@@ -1,5 +1,5 @@
 import Banner from '../../components/Banner';
-import HPLLogo from '../../../public/hpl-logo.png';
+import HPLLogo from '../../../src/assets/logo/hpl-logo.png';
 import PartnerMarquee from '../../components/PartnerMarquee';
 import ServicesCarousel from './components/ServicesCarousel';
 import Strengths from './components/Strengths';
