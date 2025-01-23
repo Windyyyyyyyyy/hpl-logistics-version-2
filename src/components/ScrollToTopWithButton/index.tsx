@@ -37,7 +37,7 @@ const ScrollToTopWithButton = () => {
       className={`fixed bottom-8 right-2 transition-all duration-500 ease-linear md:right-6 ${isVisible ? 'translate-x-0 opacity-100' : 'pointer-events-none translate-x-10 opacity-0'}`}
       onClick={handleScrollToTopClick}
     >
-      <div className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-[50%] border border-primary text-primary shadow-sm">
+      <div className="hover:shadow-custom-one flex h-11 w-11 cursor-pointer items-center justify-center rounded-[50%] border border-primary text-primary shadow-sm transition-all duration-300">
         <ChevronUp />
       </div>
     </div>
