@@ -14,6 +14,9 @@ export default {
       screens: {
         '2sm': '450px',
       },
+      boxShadow: {
+        'custom-one': '0px 0px 12px rgba(0, 0, 0, .3)',
+      },
     },
   },
   plugins: [],
