@@ -31,12 +31,14 @@ import PartnerMarquee from '../../components/PartnerMarquee';
 import ServiceImage from '../../assets/images/services.webp';
 import CardServices from './components/CardServices';
 import { Plane } from 'lucide-react';
+import Quotation from './components/Quotation';
 
 // export default Home;
 
 const Home = () => {
   return (
     <>
+      {/* Banner */}
       <section className="block">
         <div className="relative h-[400px] md:h-[600px] lg:h-[750px]">
           {/* Background overlay */}
@@ -60,6 +62,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Card Info */}
       <section className="lg:-translate-y-[50%]">
         <div className="py-10 lg:py-0">
           <div className="mx-auto h-full w-full max-w-[1170px]">
@@ -71,6 +75,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Introduce */}
       <section>
         <div className="mx-auto w-full max-w-[1170px] px-[15px]">
           <div className="text-center">
@@ -84,6 +90,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Partner Marquee */}
       <section className="mb-24 mt-16">
         <div className="mx-auto w-full max-w-[1170px] px-[15px]">
           <div className="overflow-hidden">
@@ -91,18 +99,20 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Services */}
       <section className="mb-24">
         <div className="flex bg-secondary-one py-[80px]">
-          <div className="w-full px-[15px] lg:ml-[59px]">
+          <div className="mx-auto w-full max-w-[1170px] px-[15px]">
             <div className="flex w-full flex-col md:flex-row">
-              <div className="flex w-full flex-col md:w-3/5">
+              <div className="flex w-full flex-col md:w-4/5">
                 <div className="text-white">
                   <h2 className="text-3xl font-bold lg:text-4xl">Our Services</h2>
                   <p className="text-lg">
                     Hop Phat Logistics offers some services related on the transportation process
                   </p>
                 </div>
-                <div className="mt-10 flex h-full flex-col flex-wrap md:-ml-[14px] md:flex-row">
+                <div className="mt-10 flex h-full flex-col flex-wrap md:-ml-[15px] md:flex-row">
                   <CardServices
                     icon={Plane}
                     title="Service 1"
@@ -125,7 +135,7 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className="mt-8 md:mt-0 md:w-2/5 md:pl-4">
+              <div className="mr-0 mt-8 md:mt-0 md:w-2/5 md:pl-4">
                 <img
                   src={ServiceImage}
                   alt="services image"
@@ -136,6 +146,20 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      {/* Quotation */}
+      <section>
+        <div className="mx-auto w-full max-w-[1170px] px-[15px]">
+          <div className="text-center text-3xl font-bold text-black lg:text-4xl">
+            <p>Our Quotation</p>
+          </div>
+          <div className="mb-24 mt-14">
+            <Quotation />
+          </div>
+        </div>
+      </section>
+
+      {/* Location */}
       <section className="mb-24">
         <div className="mx-auto w-full max-w-[1170px] px-[15px]">
           <div className="w-full">
