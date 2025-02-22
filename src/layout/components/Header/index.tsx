@@ -2,6 +2,7 @@ import { Link } from 'react-router';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown, Search, X } from 'lucide-react';
+import './Header.css';
 
 const Header = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -97,7 +98,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-[100] h-[100px] w-full bg-transparent transition-all duration-300 ease-in-out max-lg:h-[70px] ${scrolled ? 'h-[70px] bg-white' : 'h-[100px] bg-transparent'}`}
+      className={`fixed top-0 left-0 z-[100] h-[100px] w-full bg-transparent transition-all duration-300 ease-in-out max-lg:h-[70px] ${scrolled ? 'h-[70px] bg-white' : 'h-[100px] bg-transparent'}`}
     >
       <div className="relative z-[99] h-full">
         <div className="mx-auto h-full max-w-[1170px] px-[15px]">
@@ -148,18 +149,18 @@ const Header = () => {
                           </div>
                         )}
 
-                        <span className="absolute -bottom-1 right-0 h-[3px] w-0 rounded bg-primary transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full"></span>
+                        <span className="bg-primary absolute right-0 -bottom-1 h-[3px] w-0 rounded transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full"></span>
                       </Link>
                       {item.subitems && (
-                        <ul className="invisible absolute left-0 top-[100%] z-10 mt-2 flex min-w-60 max-w-80 translate-y-[-20px] flex-col rounded bg-white p-3 opacity-0 transition-all duration-300">
+                        <ul className="invisible absolute top-[200%] left-0 z-10 mt-2 flex max-w-80 min-w-60 translate-y-[-20px] flex-col rounded bg-white p-3 opacity-0 transition-all duration-300">
                           {item.subitems.map((subitem) => (
                             <li key={subitem.key} className="w-full">
                               <Link
                                 to={subitem.path}
-                                className="group relative flex py-3 font-medium hover:text-primary"
+                                className="group hover:text-primary relative flex py-3 font-medium"
                               >
                                 {subitem.label}
-                                <span className="absolute bottom-1 right-0 h-[3px] w-0 rounded bg-primary transition-all duration-500 ease-in-out group-hover:left-0 group-hover:w-full"></span>
+                                <span className="bg-primary absolute right-0 bottom-1 h-[3px] w-0 rounded transition-all duration-500 ease-in-out group-hover:left-0 group-hover:w-full"></span>
                               </Link>
                             </li>
                           ))}
@@ -190,7 +191,7 @@ const Header = () => {
                     </Link>
                     {index < languages.length - 1 && ( // Add the separator for all except the last item
                       <span
-                        className={`absolute right-0 top-1/2 h-4/5 w-[2px] translate-x-[50%] translate-y-[-50%] ${scrolled ? 'bg-black' : 'bg-white'}`}
+                        className={`absolute top-1/2 right-0 h-4/5 w-[2px] translate-x-[50%] translate-y-[-50%] ${scrolled ? 'bg-black' : 'bg-white'}`}
                       ></span>
                     )}
                   </div>
@@ -202,13 +203,13 @@ const Header = () => {
 
         {/* Mobile Overlay */}
         <div
-          className={`fixed bottom-0 left-0 right-0 top-0 z-[100] bg-[rgba(0,0,0,0.3)] ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}`}
+          className={`fixed top-0 right-0 bottom-0 left-0 z-[100] bg-[rgba(0,0,0,0.3)] ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}`}
           onClick={handleOpen}
         ></div>
 
         {/* Sidebar Mobile */}
         <div
-          className={`fixed bottom-0 left-0 top-0 z-[120] transform bg-white transition-transform duration-500 ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}`}
+          className={`fixed top-0 bottom-0 left-0 z-[120] transform bg-white transition-transform duration-500 ${mobileOpen ? 'translate-x-0' : '-translate-x-full'}`}
         >
           <div className="flex h-full w-full flex-col px-5 py-11 pt-0">
             {/* Logo HPL */}
@@ -220,7 +221,7 @@ const Header = () => {
 
             {/* Close Button */}
             <div
-              className="absolute right-0 top-0 cursor-pointer bg-primary p-3"
+              className="bg-primary absolute top-0 right-0 cursor-pointer p-3"
               onClick={handleOpen}
             >
               <X color="#ffffff" strokeWidth={2.5} />
@@ -239,7 +240,7 @@ const Header = () => {
                         {language}
                       </Link>
                       {index < languages.length - 1 && ( // Add the separator for all except the last item
-                        <span className="absolute right-0 top-1/2 h-4/5 w-[2px] translate-x-[50%] translate-y-[-50%] bg-black"></span>
+                        <span className="absolute top-1/2 right-0 h-4/5 w-[2px] translate-x-[50%] translate-y-[-50%] bg-black"></span>
                       )}
                     </div>
                   ))}
@@ -261,7 +262,7 @@ const Header = () => {
                             <ChevronDown strokeWidth={3} />
                           </div>
                         )}
-                        <span className="absolute bottom-2 right-0 h-[2px] w-0 rounded bg-primary transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full"></span>
+                        <span className="bg-primary absolute right-0 bottom-2 h-[2px] w-0 rounded transition-all duration-300 ease-in-out group-hover:left-0 group-hover:w-full"></span>
                       </div>
                       {item.subitems && (
                         <ul
@@ -271,14 +272,14 @@ const Header = () => {
                             <li key={subitem.key} className="w-full">
                               <Link
                                 to={subitem.path}
-                                className="group relative flex py-2 font-medium hover:text-primary"
+                                className="group hover:text-primary relative flex py-2 font-medium"
                                 onClick={() => {
                                   handleShow(item.key);
                                   handleOpen();
                                 }}
                               >
                                 {subitem.label}
-                                <span className="absolute bottom-1 right-0 h-[3px] w-0 rounded bg-primary transition-all duration-500 ease-in-out group-hover:left-0 group-hover:w-full"></span>
+                                <span className="bg-primary absolute right-0 bottom-1 h-[3px] w-0 rounded transition-all duration-500 ease-in-out group-hover:left-0 group-hover:w-full"></span>
                               </Link>
                             </li>
                           ))}

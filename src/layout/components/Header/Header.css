@@ -1,0 +1,5 @@
+.hover-visible-parent:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}

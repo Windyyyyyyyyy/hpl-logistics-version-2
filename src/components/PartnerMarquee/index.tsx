@@ -2,27 +2,52 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import './style.css';
 import { Autoplay } from 'swiper/modules';
+import CoscoLogo from '../../assets/images/cosco-shipping-logo.jpg';
+import EvergreenLogo from '../../assets/images/evergreen-logo.jpg';
+import WanHaiLogo from '../../assets/images/wanhailines-logo.jpg';
+import TanCangLogo from '../../assets/images/tan-cang-shipping-logo-resized.png';
+import OoclLogo from '../../assets/images/oocllogo-resized.png';
+import MearkLogo from '../../assets/images/meark.png';
+import GlsLogo from '../../assets/images/logo-gls.png';
+import GemadeptLogo from '../../assets/images/logo-gemadept.png';
+import KmtcLineLogo from '../../assets/images/kmtc-line-resized.jpg';
 
 const PartnerMarquee = () => {
   const logoLst = [
     {
-      imageUrl: '',
+      imageUrl: CoscoLogo,
       altAttr: 'Logo 1',
     },
     {
-      imageUrl: '',
+      imageUrl: EvergreenLogo,
       altAttr: 'Logo 2',
     },
     {
-      imageUrl: '',
+      imageUrl: WanHaiLogo,
       altAttr: 'Logo 3',
     },
     {
-      imageUrl: '',
+      imageUrl: TanCangLogo,
       altAttr: 'Logo 4',
     },
     {
-      imageUrl: '',
+      imageUrl: OoclLogo,
+      altAttr: 'Logo 5',
+    },
+    {
+      imageUrl: MearkLogo,
+      altAttr: 'Logo 5',
+    },
+    {
+      imageUrl: GlsLogo,
+      altAttr: 'Logo 5',
+    },
+    {
+      imageUrl: GemadeptLogo,
+      altAttr: 'Logo 5',
+    },
+    {
+      imageUrl: KmtcLineLogo,
       altAttr: 'Logo 5',
     },
   ];
@@ -30,16 +55,16 @@ const PartnerMarquee = () => {
   return (
     <Swiper
       modules={[Autoplay]}
-      spaceBetween={30}
+      spaceBetween={120}
       slidesPerView="auto"
       loop={true}
       autoplay={{ delay: 0, disableOnInteraction: false }}
       speed={7000}
-      className="mySwiper px-[15px]"
+      className="mySwiper"
     >
       {logoLst.map((logo, index) => (
         <SwiperSlide key={index}>
-          <div className="flex aspect-[16/5] h-[150px] w-auto items-center bg-gray-200">
+          <div className="flex h-[70px] items-center justify-center">
             <img
               src={logo.imageUrl}
               alt={logo.altAttr}
