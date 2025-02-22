@@ -55,20 +55,20 @@ const PartnerMarquee = () => {
   return (
     <Swiper
       modules={[Autoplay]}
-      spaceBetween={120}
+      spaceBetween={240}
       slidesPerView="auto"
       loop={true}
       autoplay={{ delay: 0, disableOnInteraction: false }}
       speed={7000}
-      className="mySwiper"
+      className="mySwiper px-[15px]"
     >
       {logoLst.map((logo, index) => (
         <SwiperSlide key={index}>
-          <div className="flex h-[70px] items-center justify-center">
+          <div className="flex h-[70px] w-auto items-center justify-center">
             <img
               src={logo.imageUrl}
               alt={logo.altAttr}
-              className="h-full object-contain"
+              className="h-full w-full object-contain"
               loading="lazy"
             />
           </div>

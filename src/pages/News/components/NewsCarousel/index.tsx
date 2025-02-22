@@ -48,7 +48,7 @@ const NewsCarousel = ({ ...props }: NewsCarouselProps) => {
       <div>
         <Link
           to="/"
-          className="flex items-center rounded bg-primary px-5 py-3 text-base font-bold text-white"
+          className="bg-primary flex items-center rounded px-5 py-3 text-base font-bold text-white"
         >
           <p className="mr-2">See more</p>
           <ChevronRight />
