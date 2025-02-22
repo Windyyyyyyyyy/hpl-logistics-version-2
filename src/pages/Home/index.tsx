@@ -81,7 +81,7 @@ const Home = () => {
         <div className="mx-auto w-full max-w-[1170px] px-[15px]">
           <div className="text-center">
             <h2 className="text-3xl font-bold md:text-5xl">Hop Phat Logistics</h2>
-            <p className="mt-2 text-base font-semibold text-primary md:text-xl">
+            <p className="text-primary mt-2 text-base font-semibold md:text-xl">
               Efficiency - Safety - Reliability
             </p>
           </div>
@@ -92,7 +92,7 @@ const Home = () => {
       </section>
 
       {/* Partner Marquee */}
-      <section className="mb-24 mt-16">
+      <section className="mt-16 mb-24">
         <div className="mx-auto w-full max-w-[1170px] px-[15px]">
           <div className="overflow-hidden">
             <PartnerMarquee />
@@ -102,7 +102,7 @@ const Home = () => {
 
       {/* Services */}
       <section className="mb-24">
-        <div className="flex bg-secondary-one py-[80px]">
+        <div className="bg-secondary-one flex py-[80px]">
           <div className="mx-auto w-full max-w-[1170px] px-[15px]">
             <div className="flex w-full flex-col md:flex-row">
               <div className="flex w-full flex-col md:w-4/5">
@@ -135,7 +135,7 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className="mr-0 mt-8 md:mt-0 md:w-2/5 md:pl-4">
+              <div className="mt-8 mr-0 md:mt-0 md:w-2/5 md:pl-4">
                 <img
                   src={ServiceImage}
                   alt="services image"
@@ -153,7 +153,7 @@ const Home = () => {
           <div className="text-center text-3xl font-bold text-black lg:text-4xl">
             <p>Our Quotation</p>
           </div>
-          <div className="mb-24 mt-14">
+          <div className="mt-14 mb-24">
             <Quotation />
           </div>
         </div>
