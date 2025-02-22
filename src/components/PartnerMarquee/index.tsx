@@ -58,7 +58,7 @@ const PartnerMarquee = () => {
       spaceBetween={240}
       slidesPerView="auto"
       loop={true}
-      autoplay={{ delay: 0, disableOnInteraction: false }}
+      autoplay={{ delay: 500, disableOnInteraction: false }}
       speed={7000}
       className="mySwiper px-[15px]"
     >
