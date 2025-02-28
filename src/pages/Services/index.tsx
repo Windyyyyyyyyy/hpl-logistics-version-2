@@ -18,6 +18,7 @@ const Services = () => {
     <section>
       <div>
         <Banner
+          imageUrl=""
           title="Services"
           routes={[
             { label: 'Home', stringUrl: '', active: false },
@@ -34,7 +35,7 @@ const Services = () => {
                 <Link
                   key={index}
                   to={`/services/${service.path}`}
-                  className={`flex cursor-pointer items-center justify-between border-b bg-gray-100 p-4 hover:bg-primary hover:text-white ${selectedService === service.path ? 'bg-primary text-white' : ''}`}
+                  className={`hover:bg-primary flex cursor-pointer items-center justify-between border-b bg-gray-100 p-4 hover:text-white ${selectedService === service.path ? 'bg-primary text-white' : ''}`}
                 >
                   <span>{service.name}</span>
                   <ChevronRight strokeWidth={3} />
@@ -68,11 +69,11 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="mt-12 flex flex-col items-center justify-center space-y-4 rounded-lg bg-gray-50 p-6 md:flex-row md:space-x-4 md:space-y-0">
+          <div className="mt-12 flex flex-col items-center justify-center space-y-4 rounded-lg bg-gray-50 p-6 md:flex-row md:space-y-0 md:space-x-4">
             <p className="mb-4 text-center text-lg md:mb-0 md:text-left">
               Have you question or need any help for work consultant
             </p>
-            <button className="rounded bg-primary px-6 py-3 text-white hover:bg-primary">
+            <button className="bg-primary hover:bg-primary rounded px-6 py-3 text-white">
               CONTACT US
             </button>
           </div>

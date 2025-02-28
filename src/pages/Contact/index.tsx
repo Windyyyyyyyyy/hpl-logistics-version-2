@@ -18,6 +18,7 @@ const Contact = () => {
     <section>
       <div>
         <Banner
+          imageUrl=""
           title="Contact"
           routes={[
             { label: 'Home', stringUrl: '', active: false },
@@ -154,7 +155,7 @@ const Contact = () => {
                             className={inputClass}
                             disabled={cargoType === 'FCL'}
                           />
-                          <span className="absolute right-1 top-1 text-black">kg</span>
+                          <span className="absolute top-1 right-1 text-black">kg</span>
                         </div>
                       </div>
 
@@ -169,7 +170,7 @@ const Contact = () => {
                             className={inputClass}
                             disabled={cargoType === 'FCL'}
                           />
-                          <span className="absolute right-1 top-1 text-black">m³</span>
+                          <span className="absolute top-1 right-1 text-black">m³</span>
                         </div>
                       </div>
                     </div>
