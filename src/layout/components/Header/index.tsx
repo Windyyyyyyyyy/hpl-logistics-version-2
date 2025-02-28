@@ -98,7 +98,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 z-[100] w-full bg-transparent transition-all duration-300 ease-in-out max-lg:h-[70px] ${scrolled ? 'h-[70px] bg-white' : 'h-[100px] bg-transparent'}`}
+      className={`fixed top-0 left-0 z-[100] w-full bg-transparent transition-all duration-300 ease-in-out max-lg:h-[70px] ${scrolled ? 'shadow-custom-two h-[70px] bg-white' : 'h-[100px] bg-transparent'}`}
     >
       <div className="relative z-[99] h-full">
         <div className="mx-auto h-full max-w-[1170px] px-[15px]">

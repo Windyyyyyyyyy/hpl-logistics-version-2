@@ -48,6 +48,7 @@ const News = () => {
     <section>
       <div>
         <Banner
+          imageUrl=""
           title="News"
           routes={[
             { label: 'Home', stringUrl: '', active: false },

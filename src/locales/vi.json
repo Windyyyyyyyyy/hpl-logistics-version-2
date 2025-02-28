@@ -121,5 +121,55 @@
         }
       }
     }
+  },
+
+  "about": {
+    "banner": {
+      "title": "Về chúng tôi",
+      "routes": {
+        "home": "Trang chủ",
+        "about": "Về chúng tôi"
+      }
+    },
+    "introduction": {
+      "slogan": "Hiệu quả - An toàn - Tin cậy",
+      "content": "Hợp Phát Logistics (thành lập năm 2016) cung cấp giải pháp logistics toàn diện, bao gồm vận chuyển quốc tế, khai báo hải quan và kho bãi. Chúng tôi cam kết dịch vụ nhanh chóng, chính xác, hiệu quả, giúp doanh nghiệp mở rộng và tối ưu chuỗi cung ứng."
+    },
+    "strengths": {
+      "title": "Điểm mạnh",
+      "subItems": {
+        "routes": {
+          "label": "Với thế mạnh các tuyến Đông Nam Á và Trung Quốc",
+          "desc": "Vận chuyển hàng nguyên Container và hàng lẻ (FCL/LCL) với giá cạnh tranh và giao nhận hàng tận kho (door-to-door services). Ngoài ra HPL còn xử lý các yêu cầu giao nhận hàng với các điều kiện EXW, FOB, CIF …"
+        },
+        "handling": {
+          "label": "Giải quyết tất cả các yêu cầu, đơn hàng của khách hàng",
+          "desc": "Đã làm việc trong ngành vận tải hàng hóa trong nước nhiều năm, HPL chắc chắn có thể đáp ứng mọi nhu cầu của khách hàng."
+        },
+        "experience": {
+          "label": "Đội ngũ pháp lý giàu kinh nghiệm",
+          "desc": "Với đội ngũ pháp lý được đào tạo từ các trường đại học về Luật hàng đầu Việt Nam, chúng tôi sẵn sàng xử lý các hồ sơ xuất nhập khẩu phức tạp nhất cho quý khách hàng."
+        },
+        "saveTime": {
+          "label": "Tiết kiệm tối đa thời gian cho quý khách hàng",
+          "desc": "Nếu khách hàng không có nhiều thời gian hoặc kinh nghiệp, hãy tìm đến dịch vụ Ủy Thác của HPL, chúng tôi sẽ hoàn thành đơn hàng cho quý khách chỉ với một văn bản ủy."
+        }
+      }
+    },
+    "ourService": {
+      "title": "Dịch vụ của chúng tôi",
+      "subItems": {
+        "interShipping": "Vận chuyển quốc tế",
+        "domesticShipping": "Vận chuyển nội địa",
+        "customsClearance": "Khai báo hải quan",
+        "importExport": "Xuất nhập khẩu",
+        "air": "Vận chuyển hàng không",
+        "sea": "Vận chuyển đường biển",
+        "land": "Vận chuyển đường bộ",
+        "support": "Dịch vụ hỗ trợ"
+      },
+      "button": "Xem thêm"
+    },
+    "ourPartner": "Đối tác"
   }
 }

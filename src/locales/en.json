@@ -118,5 +118,55 @@
         }
       }
     }
+  },
+
+  "about": {
+    "banner": {
+      "title": "About Us",
+      "routes": {
+        "home": "Home",
+        "about": "About Us"
+      }
+    },
+    "introduction": {
+      "slogan": "Efficient - Safe - Reliable",
+      "content": "Hợp Phát Logistics (founded in 2016) provides comprehensive logistics solutions, including international transportation, customs clearance, and warehousing. We are committed to fast, accurate, and efficient services to help businesses expand and optimize their supply chains."
+    },
+    "strengths": {
+      "title": "Why Choose HPL?",
+      "subItems": {
+        "routes": {
+          "label": "Strong presence in Southeast Asia and China routes",
+          "desc": "We provide full-container load (FCL) and less-than-container load (LCL) shipping at competitive prices with door-to-door delivery services. Additionally, HPL handles shipments under various terms such as EXW, FOB, CIF, etc."
+        },
+        "handling": {
+          "label": "Handling all customer requests and orders",
+          "desc": "With years of experience in domestic freight transportation, HPL can confidently meet all customer needs."
+        },
+        "experience": {
+          "label": "Experienced legal team",
+          "desc": "Our legal team, trained at top law universities in Vietnam, is ready to handle the most complex import-export documents for our customers."
+        },
+        "saveTime": {
+          "label": "Maximize time savings for customers",
+          "desc": "If customers lack time or experience, HPL's Entrusted Service will complete their orders with just a single authorization document."
+        }
+      }
+    },
+    "ourService": {
+      "title": "Our Services",
+      "subItems": {
+        "interShipping": "International Shipping",
+        "domesticShipping": "Domestic Shipping",
+        "customsClearance": "Customs Clearance",
+        "importExport": "Import-Export Authorization",
+        "air": "Air Freight",
+        "sea": "Sea Freight",
+        "land": "Land Transportation",
+        "support": "Support Services"
+      },
+      "button": "See More"
+    },
+    "ourPartner": "Our Partners"
   }
 }

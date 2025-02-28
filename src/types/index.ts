@@ -35,6 +35,7 @@ export interface Route {
 }
 
 export interface Banner {
+  imageUrl: string;
   title: string;
   routes: Array<Route>;
 }
@@ -54,4 +55,20 @@ export interface NewsCarouselProps {
 
 export interface QuotationProps {
   thValue: Array<string>;
+}
+
+export interface StrengthsProps {
+  icon: ForwardRefExoticComponent<Omit<LucideProps, 'ref'> & RefAttributes<SVGSVGElement>>;
+  label: string;
+  desc: string;
+}
+
+export interface ServicesProps {
+  imageUrl: string;
+  label: string;
+}
+
+export interface ServicesCarouselProps {
+  services: Array<ServicesProps>;
+  button: string;
 }
