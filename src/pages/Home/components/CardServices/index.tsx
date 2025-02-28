@@ -13,13 +13,13 @@ const CardServices = ({ ...props }: CardServicesProps) => {
         <div className="bg-primary absolute -top-9 -right-7 h-24 w-24 rounded-[50%]">
           {<props.icon className="absolute bottom-5 left-6" color="white" size={26} />}
         </div>
-        <div className="flex flex-col text-white">
+        <div className="flex h-full flex-col justify-between text-white">
           <div className="mb-5">
-            <h3 className="text-lg font-bold md:text-2xl">{props.title}</h3>
+            <h3 className="text-lg font-bold md:text-xl">{props.title}</h3>
             <p className="mt-2 text-sm md:text-base">{props.desc}</p>
           </div>
-          <div className="text-primary text-lg font-bold">
-            <Link to="/">View details</Link>
+          <div className="text-primary mt-auto text-base font-bold">
+            <Link to="/">{props.button}</Link>
           </div>
         </div>
       </div>

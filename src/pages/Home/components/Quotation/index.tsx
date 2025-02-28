@@ -2,66 +2,125 @@ import { useEffect } from 'react';
 import initAOS from '../../../../utils/aos';
 
 const Quotation = () => {
+  // const thValue = [
+  //   'Logistics Company',
+  //   'Origin/Destination',
+  //   'Container Size/Type',
+  //   'ETD',
+  //   'Transit Time',
+  //   'Surcharges',
+  //   'Freight Cost',
+  //   'Total Cost',
+  //   'Valid Till',
+  // ];
+
   const thValue = [
-    'Logistics Company',
-    'Origin/Destination',
-    'Container Size/Type',
+    'POL',
+    'POD',
+    'CARRIER',
+    'LCL RATE',
     'ETD',
-    'Transit Time',
-    'Surcharges',
-    'Freight Cost',
-    'Total Cost',
-    'Valid Till',
+    'T/S',
+    'T/T',
+    'CHINESE LOCAL CHARGE',
+    'VIETNAM CHARGE',
   ];
 
   const trValue = [
     {
-      logisticsCompany: 'Hop Phat Logistics',
-      originDestination: 'Ho Chi Minh City - Los Angeles',
-      containerSizeType: '20GP',
-      etd: '2022-01-01',
-      transitTime: '30 days',
-      surcharges: 'Fuel Surcharge, Peak Season Surcharge',
-      freightCost: '$1,000',
-      totalCost: '$1,200',
-      validTill: '2022-01-01',
+      pol: 'SHANGHAI',
+      pod: 'HAIPHONG',
+      carrier: 'WANHAI',
+      lclRate:
+        'USD-58/CBM(<1CBM)\n USD-48/CBM(1-3CBM)\n USD-38/CBM(3-5CBM)\n USD-33/CBM(5-10CBM)\n USD-30/CBM(10-15CBM)',
+      etd: 'TUE/THU/SAT',
+      ts: 'DIR',
+      tt: '6 DAYS',
+      chineseLocalCharge:
+        'DOC:USD20/BL+EBS, CIC:USD12/CBM+CFS:USD8/CBM+LSS:USD5/CBM+VGM, CHARGE:USD20/SET+CUSTOMS, CLEARANCE:SUD20/SET',
+      vietnamCharge: 'USD24/RT+USD25/BL',
     },
     {
-      logisticsCompany: 'Hop Phat Logistics',
-      originDestination: 'Ho Chi Minh City - Los Angeles',
-      containerSizeType: '20GP',
-      etd: '2022-01-01',
-      transitTime: '30 days',
-      surcharges: 'Fuel Surcharge, Peak Season Surcharge',
-      freightCost: '$1,000',
-      totalCost: '$1,200',
-      validTill: '2022-01-01',
+      pol: 'SHANGHAI',
+      pod: 'HAIPHONG',
+      carrier: 'WANHAI',
+      lclRate:
+        'USD-58/CBM(<1CBM)\n USD-48/CBM(1-3CBM)\n USD-38/CBM(3-5CBM)\n USD-33/CBM(5-10CBM)\n USD-30/CBM(10-15CBM)',
+      etd: 'TUE/THU/SAT',
+      ts: 'DIR',
+      tt: '6 DAYS',
+      chineseLocalCharge:
+        'DOC:USD20/BL+EBS, CIC:USD12/CBM+CFS:USD8/CBM+LSS:USD5/CBM+VGM, CHARGE:USD20/SET+CUSTOMS, CLEARANCE:SUD20/SET',
+      vietnamCharge: 'USD24/RT+USD25/BL',
     },
     {
-      logisticsCompany: 'Hop Phat Logistics',
-      originDestination: 'Ho Chi Minh City - Los Angeles',
-      containerSizeType: '20GP',
-      etd: '2022-01-01',
-      transitTime: '30 days',
-      surcharges: 'Fuel Surcharge, Peak Season Surcharge',
-      freightCost: '$1,000',
-      totalCost: '$1,200',
-      validTill: '2022-01-01',
+      pol: 'SHANGHAI',
+      pod: 'HAIPHONG',
+      carrier: 'WANHAI',
+      lclRate:
+        'USD-58/CBM(<1CBM)\n USD-48/CBM(1-3CBM)\n USD-38/CBM(3-5CBM)\n USD-33/CBM(5-10CBM)\n USD-30/CBM(10-15CBM)',
+      etd: 'TUE/THU/SAT',
+      ts: 'DIR',
+      tt: '6 DAYS',
+      chineseLocalCharge:
+        'DOC:USD20/BL+EBS, CIC:USD12/CBM+CFS:USD8/CBM+LSS:USD5/CBM+VGM, CHARGE:USD20/SET+CUSTOMS, CLEARANCE:SUD20/SET',
+      vietnamCharge: 'USD24/RT+USD25/BL',
     },
     {
-      logisticsCompany: 'Hop Phat Logistics',
-      originDestination: 'Ho Chi Minh City - Los Angeles',
-      containerSizeType: '20GP',
-      etd: '2022-01-01',
-      transitTime: '30 days',
-      surcharges: 'Fuel Surcharge, Peak Season Surcharge',
-      freightCost: '$1,000',
-      totalCost: '$1,200',
-      validTill: '2022-01-01',
+      pol: 'SHANGHAI',
+      pod: 'HAIPHONG',
+      carrier: 'WANHAI',
+      lclRate:
+        'USD-58/CBM(<1CBM)\n USD-48/CBM(1-3CBM)\n USD-38/CBM(3-5CBM)\n USD-33/CBM(5-10CBM)\n USD-30/CBM(10-15CBM)',
+      etd: 'TUE/THU/SAT',
+      ts: 'DIR',
+      tt: '6 DAYS',
+      chineseLocalCharge:
+        'DOC:USD20/BL+EBS, CIC:USD12/CBM+CFS:USD8/CBM+LSS:USD5/CBM+VGM, CHARGE:USD20/SET+CUSTOMS, CLEARANCE:SUD20/SET',
+      vietnamCharge: 'USD24/RT+USD25/BL',
+    },
+    {
+      pol: 'SHANGHAI',
+      pod: 'HAIPHONG',
+      carrier: 'WANHAI',
+      lclRate:
+        'USD-58/CBM(<1CBM)\n USD-48/CBM(1-3CBM)\n USD-38/CBM(3-5CBM)\n USD-33/CBM(5-10CBM)\n USD-30/CBM(10-15CBM)',
+      etd: 'TUE/THU/SAT',
+      ts: 'DIR',
+      tt: '6 DAYS',
+      chineseLocalCharge:
+        'DOC:USD20/BL+EBS, CIC:USD12/CBM+CFS:USD8/CBM+LSS:USD5/CBM+VGM, CHARGE:USD20/SET+CUSTOMS, CLEARANCE:SUD20/SET',
+      vietnamCharge: 'USD24/RT+USD25/BL',
+    },
+    {
+      pol: 'SHANGHAI',
+      pod: 'HAIPHONG',
+      carrier: 'WANHAI',
+      lclRate:
+        'USD-58/CBM(<1CBM)\n USD-48/CBM(1-3CBM)\n USD-38/CBM(3-5CBM)\n USD-33/CBM(5-10CBM)\n USD-30/CBM(10-15CBM)',
+      etd: 'TUE/THU/SAT',
+      ts: 'DIR',
+      tt: '6 DAYS',
+      chineseLocalCharge:
+        'DOC:USD20/BL+EBS, CIC:USD12/CBM+CFS:USD8/CBM+LSS:USD5/CBM+VGM, CHARGE:USD20/SET+CUSTOMS, CLEARANCE:SUD20/SET',
+      vietnamCharge: 'USD24/RT+USD25/BL',
+    },
+    {
+      pol: 'SHANGHAI',
+      pod: 'HAIPHONG',
+      carrier: 'WANHAI',
+      lclRate:
+        'USD-58/CBM(<1CBM)\n USD-48/CBM(1-3CBM)\n USD-38/CBM(3-5CBM)\n USD-33/CBM(5-10CBM)\n USD-30/CBM(10-15CBM)',
+      etd: 'TUE/THU/SAT',
+      ts: 'DIR',
+      tt: '6 DAYS',
+      chineseLocalCharge:
+        'DOC:USD20/BL+EBS, CIC:USD12/CBM+CFS:USD8/CBM+LSS:USD5/CBM+VGM, CHARGE:USD20/SET+CUSTOMS, CLEARANCE:SUD20/SET',
+      vietnamCharge: 'USD24/RT+USD25/BL',
     },
   ];
 
-  const tdStyle = 'border px-1 py-1 text-center';
+  const tdStyle = 'border px-2 text-[13px] py-2';
 
   useEffect(() => {
     initAOS();
@@ -70,7 +129,7 @@ const Quotation = () => {
   return (
     <div data-aos="fade-up">
       <div className="overflow-x-auto">
-        <table className="w-full table-auto overflow-scroll">
+        <table className="w-full table-auto overflow-scroll text-sm">
           <thead>
             <tr className="bg-gray-100">
               {thValue.map((th, index) => (
@@ -82,16 +141,19 @@ const Quotation = () => {
           </thead>
           <tbody>
             {trValue.map((tr, index) => (
-              <tr key={index} className="border-b border-gray-200">
-                <td className={`${tdStyle} w-48`}>{tr.logisticsCompany}</td>
-                <td className={tdStyle}>{tr.originDestination}</td>
-                <td className={`${tdStyle} w-20`}>{tr.containerSizeType}</td>
-                <td className={`${tdStyle} whitespace-nowrap`}>{tr.etd}</td>
-                <td className={tdStyle}>{tr.transitTime}</td>
-                <td className={tdStyle}>{tr.surcharges}</td>
-                <td className={tdStyle}>{tr.freightCost}</td>
-                <td className={tdStyle}>{tr.totalCost}</td>
-                <td className={`${tdStyle} whitespace-nowrap`}>{tr.validTill}</td>
+              <tr key={index} className="border border-gray-200">
+                <td className={`${tdStyle}`}>{tr.pol}</td>
+                <td className={tdStyle}>{tr.pod}</td>
+                <td className={`${tdStyle}`}>{tr.carrier}</td>
+                <td className={`${tdStyle} whitespace-nowrap`}>
+                  {' '}
+                  <div dangerouslySetInnerHTML={{ __html: tr.lclRate.replace(/\n/g, '<br>') }} />
+                </td>
+                <td className={tdStyle}>{tr.etd}</td>
+                <td className={tdStyle}>{tr.ts}</td>
+                <td className={`${tdStyle} whitespace-nowrap`}>{tr.tt}</td>
+                <td className={`${tdStyle} w-fit`}>{tr.chineseLocalCharge}</td>
+                <td className={tdStyle}>{tr.vietnamCharge}</td>
               </tr>
             ))}
           </tbody>

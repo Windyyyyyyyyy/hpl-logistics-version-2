@@ -1,25 +1,122 @@
 {
-  "header": {
-    "navigation": {
-      "about": "About",
+  "home": {
+    "header": {
+      "navigation": {
+        "about": {
+          "label": "About",
+          "subItems": ""
+        },
+        "services": {
+          "label": "Services",
+          "subItems": {
+            "air": "Air freight",
+            "sea": "Sea freight",
+            "land": "Land freight",
+            "support": "Support Services"
+          }
+        },
+        "news": {
+          "label": "News",
+          "subItems": ""
+        },
+        "contact": {
+          "label": "Contact",
+          "subItems": {
+            "quotation": "Request a quotation",
+            "recruitment": "Recruitment"
+          }
+        },
+        "tracking": {
+          "label": "Tracking",
+          "subItems": ""
+        }
+      }
+    },
+
+    "body": {
+      "statistic": {
+        "order": "Order",
+        "customer": "Customers",
+        "mass": "Mass"
+      },
+      "introduction": {
+        "slogan": "Efficiency - Safety - Reliability",
+        "content": "Hợp Phát Logistics Co., Ltd., founded in 2016, specializes in providing comprehensive logistics solutions, including international transportation, customs clearance, warehousing, and goods distribution. With the motto \"Efficiency - Safety - Reliability\", we are committed to delivering professional services, cost optimization, and meeting all customer transportation needs. With an experienced team and an extensive partner network, we take pride in being a reliable bridge that helps businesses expand their markets and enhance their competitiveness. Hợp Phát Logistics continuously improves its services and applies modern technology to ensure a safe, transparent, and convenient transportation process for our customers. Hợp Phát Logistics – Your trusted logistics solution!",
+        "button": "See more..."
+      },
+      "ourServices": {
+        "label": "Our Services",
+        "subLabel": "We provide four types of transportation services to customers, along with related support services for the transportation process.",
+        "serviceList": {
+          "air": {
+            "label": "Air Freight",
+            "content": "Air transportation services.",
+            "button": "View Details"
+          },
+          "sea": {
+            "label": "Sea Freight",
+            "content": "Ocean transportation services.",
+            "button": "View Details"
+          },
+          "land": {
+            "label": "Land Transportation",
+            "content": "Road transportation services.",
+            "button": "View Details"
+          },
+          "support": {
+            "label": "Support Services",
+            "content": "Support services related to the transportation process.",
+            "button": "View Details"
+          }
+        }
+      },
+      "ourQuotation": {
+        "label": "Our Quotation"
+      },
+      "ourLocation": {
+        "label": "Our Location",
+        "city": "Ho Chi Minh City",
+        "address": {
+          "label": "Address",
+          "content": "585 Tung Thien Vuong, Ward 12, District 8, Ho Chi Minh City"
+        },
+        "phoneNumber": {
+          "label": "Phone",
+          "content": "+(028) 2211 5806"
+        },
+        "email": {
+          "label": "Email",
+          "content": "info@hopphatlog.com"
+        }
+      }
+    },
+    "footer": {
+      "quickLinks": {
+        "label": "Quick Links",
+        "subItems": {
+          "about": "About Us",
+          "news": "News",
+          "tracking": "Tracking",
+          "ourPartner": "Our Partner"
+        }
+      },
       "services": {
         "label": "Services",
         "subItems": {
-          "air": "Air freight",
           "sea": "Sea freight",
+          "air": "Air freight",
           "land": "Land freight",
           "support": "Support Services"
         }
       },
-      "news": "News",
       "contact": {
         "label": "Contact",
         "subItems": {
-          "quotation": "Request a quotation",
-          "recruitment": "Recruitment"
+          "address": "585 Tung Thien Vuong, Ward 12, District 8, Ho Chi Minh City",
+          "phone": "+(028) 2211 5806",
+          "email": "info@hopphatlog.com"
         }
-      },
-      "tracking": "Tracking"
+      }
     }
   }
 }

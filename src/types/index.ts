@@ -6,10 +6,26 @@ export interface CardInfo {
   number: string;
 }
 
+export interface IntroduceProps {
+  content: string;
+  button: string;
+}
+
+export interface LocationProps {
+  city: string;
+  addressLabel: string;
+  address: string;
+  phoneNumberLabel: string;
+  phoneNumber: string;
+  emailLabel: string;
+  email: string;
+}
+
 export interface CardServicesProps {
   icon: ForwardRefExoticComponent<Omit<LucideProps, 'ref'> & RefAttributes<SVGSVGElement>>;
   title: string;
   desc: string;
+  button: string;
 }
 
 export interface Route {
@@ -34,4 +50,8 @@ export interface NewsCardProps {
 export interface NewsCarouselProps {
   title: string;
   posts: Array<NewsCardProps>;
+}
+
+export interface QuotationProps {
+  thValue: Array<string>;
 }

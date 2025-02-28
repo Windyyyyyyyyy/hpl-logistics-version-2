@@ -15,62 +15,62 @@ const Header = () => {
   const navigationItems = [
     {
       key: 'about',
-      label: t('header.navigation.about'),
+      label: t('home.header.navigation.about.label'),
       path: '/about',
     },
     {
       key: 'services',
-      label: t('header.navigation.services.label'),
+      label: t('home.header.navigation.services.label'),
       path: '/services/sea-freight',
       subitems: [
         {
           key: 'air',
-          label: t('header.navigation.services.subItems.air'),
+          label: t('home.header.navigation.services.subItems.air'),
           path: '/services/air-freight',
         },
         {
           key: 'sea',
-          label: t('header.navigation.services.subItems.sea'),
+          label: t('home.header.navigation.services.subItems.sea'),
           path: '/services/sea-freight',
         },
         {
           key: 'land',
-          label: t('header.navigation.services.subItems.land'),
+          label: t('home.header.navigation.services.subItems.land'),
           path: '/services/land-transportation',
         },
         {
           key: 'support',
-          label: t('header.navigation.services.subItems.support'),
+          label: t('home.header.navigation.services.subItems.support'),
           path: '/services/support-services',
         },
       ],
     },
     {
       key: 'news',
-      label: t('header.navigation.news'),
+      label: t('home.header.navigation.news.label'),
       path: '/news',
     },
     {
       key: 'contact',
-      label: t('header.navigation.contact.label'),
+      label: t('home.header.navigation.contact.label'),
       path: '/contact',
       subitems: [
         {
           key: 'quotation',
-          label: t('header.navigation.contact.subItems.quotation'),
+          label: t('home.header.navigation.contact.subItems.quotation'),
           path: '/contact',
         },
 
         {
           key: 'recruitment',
-          label: t('header.navigation.contact.subItems.recruitment'),
+          label: t('home.header.navigation.contact.subItems.recruitment'),
           path: '/contact',
         },
       ],
     },
     {
       key: 'tracking',
-      label: t('header.navigation.tracking'),
+      label: t('home.header.navigation.tracking.label'),
       path: '/tracking',
     },
   ];
@@ -98,7 +98,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 z-[100] h-[100px] w-full bg-transparent transition-all duration-300 ease-in-out max-lg:h-[70px] ${scrolled ? 'h-[70px] bg-white' : 'h-[100px] bg-transparent'}`}
+      className={`fixed top-0 left-0 z-[100] w-full bg-transparent transition-all duration-300 ease-in-out max-lg:h-[70px] ${scrolled ? 'h-[70px] bg-white' : 'h-[100px] bg-transparent'}`}
     >
       <div className="relative z-[99] h-full">
         <div className="mx-auto h-full max-w-[1170px] px-[15px]">
@@ -131,7 +131,7 @@ const Header = () => {
               <nav className="mx-auto h-full px-[15px]">
                 <ul className="flex h-full w-full items-center justify-center">
                   {navigationItems.map((item) => (
-                    <li key={item.key} className="hover-visible-parent relative mx-9 my-3 flex">
+                    <li key={item.key} className="hover-visible-parent relative mx-7 my-3 flex">
                       <Link
                         to={item.path}
                         className={`group relative flex items-center text-lg font-medium ${scrolled ? 'text-black' : 'text-white'}`}
