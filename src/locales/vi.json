@@ -1,11 +1,125 @@
 {
-  "header": {
-    "navigation": {
-      "about": "Giới thiệu",
-      "services": "Dịch vụ",
-      "news": "Tin tức",
-      "contact": "Liên hệ",
-      "tracking": "Tracking"
+  "home": {
+    "header": {
+      "navigation": {
+        "about": {
+          "label": "Về chúng tôi",
+          "subItems": ""
+        },
+        "services": {
+          "label": "Dịch vụ",
+          "subItems": {
+            "air": "Vận chuyển hàng không",
+            "sea": "Vận chuyển đường biển",
+            "land": "Vận chuyển đường bộ",
+            "support": "Dịch vụ hỗ trợ"
+          }
+        },
+        "news": {
+          "label": "Tin tức",
+          "subItems": ""
+        },
+        "contact": {
+          "label": "Liên hệ",
+          "subItems": {
+            "quotation": "Yêu cầu báo giá",
+            "recruitment": "Tuyển dụng"
+          }
+        },
+        "tracking": {
+          "label": "Theo dõi",
+          "subItems": ""
+        }
+      }
+    },
+
+    "body": {
+      "statistic": {
+        "order": "Đơn hàng",
+        "customer": "Khách hàng",
+        "mass": "Khối lượng"
+      },
+      "introduction": {
+        "slogan": "Hiệu quả - An toàn - Tin cậy",
+        "content": "Công ty TNHH Hợp Phát Logistics được thành lập năm 2016, chuyên cung cấp giải pháp logistics toàn diện, bao gồm vận chuyển quốc tế, khai báo hải quan, kho bãi và phân phối hàng hóa. Với phương châm “Hiệu quả - An toàn - Tin cậy”, Hợp Phát Logistics cam kết mang đến dịch vụ chuyên nghiệp, tối ưu chi phí và đáp ứng mọi nhu cầu vận chuyển của khách hàng. Với đội ngũ nhân viên giàu kinh nghiệm và mạng lưới đối tác rộng khắp, chúng tôi tự hào là cầu nối tin cậy giúp doanh nghiệp mở rộng thị trường, nâng cao năng lực cạnh tranh. Hợp Phát Logistics không ngừng cải tiến dịch vụ, ứng dụng công nghệ hiện đại nhằm đảm bảo quy trình vận chuyển an toàn, minh bạch và thuận tiện nhất cho khách hàng. Hợp Phát Logistics – Giải pháp logistics đáng tin cậy cho doanh nghiệp của bạn!",
+        "button": "Tìm hiểu thêm"
+      },
+      "ourServices": {
+        "label": "Dịch vụ của chúng tôi",
+        "subLabel": "Chúng tôi đang cung cấp 4 loại dịch vụ vận chuyển đến khách hàng và các dịch vụ hỗ trợ liên quan đến quá trình vận tải.",
+        "serviceList": {
+          "air": {
+            "label": "Vận chuyển hàng không",
+            "content": "Dịch vụ vận chuyển bằng đường hàng không.",
+            "button": "Xem chi tiết"
+          },
+          "sea": {
+            "label": "Vận chuyển đường biển",
+            "content": "Dịch vụ vận chuyển bằng đường biển.",
+            "button": "Xem chi tiết"
+          },
+          "land": {
+            "label": "Vận chuyển đường bộ",
+            "content": "Dịch vụ vận chuyển bằng đường bộ.",
+            "button": "Xem chi tiết"
+          },
+          "support": {
+            "label": "Dịch vụ hỗ trợ",
+            "content": "Dịch vụ hỗ trợ liên quan đến quá trình vận tải.",
+            "button": "Xem chi tiết"
+          }
+        }
+      },
+      "ourQuotation": {
+        "label": "Báo Giá Của Chúng Tôi",
+        "subLabel": "Chúng tôi cung cấp dịch vụ báo giá vận chuyển hàng hóa, giúp khách hàng biết được chi phí vận chuyển hàng hóa của mình.",
+        "button": "Yêu cầu báo giá"
+      },
+      "ourLocation": {
+        "label": "Vị trí của chúng tôi",
+        "city": "Thành phố Hồ Chí Minh",
+        "address": {
+          "label": "Địa chỉ",
+          "content": "585 Tùng Thiên Vương, Phường 12, Quận 8, TP.HCM"
+        },
+        "phoneNumber": {
+          "label": "Điện thoại",
+          "content": "+(028) 2211 5806"
+        },
+        "email": {
+          "label": "Email",
+          "content": "info@hopphatlog.com"
+        }
+      }
+    },
+
+    "footer": {
+      "quickLinks": {
+        "label": "Liên kết nhanh",
+        "subItems": {
+          "about": "Về chúng tôi",
+          "news": "Tin tức",
+          "tracking": "Theo dõi",
+          "ourPartner": "Đối tác của chúng tôi"
+        }
+      },
+      "services": {
+        "label": "Dịch vụ",
+        "subItems": {
+          "air": "Vận chuyển hàng không",
+          "sea": "Vận chuyển đường biển",
+          "land": "Vận chuyển đường bộ",
+          "support": "Dịch vụ hỗ trợ"
+        }
+      },
+      "contact": {
+        "label": "Liên hệ",
+        "subItems": {
+          "address": "585 Tùng Thiên Vương, Phường 12, Quận 8, TP.HCM",
+          "phone": "+(028) 2211 5806",
+          "email": "info@hopphatlog.com"
+        }
+      }
     }
   }
 }

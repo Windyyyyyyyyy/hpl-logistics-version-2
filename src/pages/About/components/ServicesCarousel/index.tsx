@@ -39,7 +39,7 @@ const ServicesCarousel = () => {
   ];
   return (
     <div className="flex flex-col items-center gap-6">
-      <div className="w-full">
+      <div className="service-carousel w-full">
         <Swiper
           slidesPerView={1}
           pagination={{
@@ -76,7 +76,7 @@ const ServicesCarousel = () => {
                 {/* Content section */}
                 <div className="p-4">
                   {/* Title */}
-                  <h2 className="mb-2 line-clamp-2 text-lg font-semibold text-gray-800 transition-colors duration-200 hover:text-primary md:text-xl">
+                  <h2 className="hover:text-primary mb-2 line-clamp-2 text-lg font-semibold text-gray-800 transition-colors duration-200 md:text-xl">
                     {service.label}
                   </h2>
                 </div>
@@ -88,7 +88,7 @@ const ServicesCarousel = () => {
       <div>
         <Link
           to="/services"
-          className="flex items-center rounded bg-primary px-5 py-3 text-base font-bold text-white"
+          className="bg-primary flex items-center rounded px-5 py-3 text-base font-bold text-white"
         >
           <p className="mr-2">See more</p>
           <ChevronRight />

@@ -30,12 +30,14 @@ import Map from './components/Map';
 import PartnerMarquee from '../../components/PartnerMarquee';
 import ServiceImage from '../../assets/images/services.webp';
 import CardServices from './components/CardServices';
-import { Plane } from 'lucide-react';
+import { Plane, Truck, Ship, Package } from 'lucide-react';
 import Quotation from './components/Quotation';
+import { useTranslation } from 'react-i18next';
 
 // export default Home;
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <>
       {/* Banner */}
@@ -68,9 +70,9 @@ const Home = () => {
         <div className="py-10 lg:py-0">
           <div className="mx-auto h-full w-full max-w-[1170px]">
             <div className="flex flex-wrap justify-center">
-              <CardInfo label="Order" number="3597" />
-              <CardInfo label="Customer" number="1576" />
-              <CardInfo label="Mass" number="8500" />
+              <CardInfo label={t('home.body.statistic.order')} number="3597" />
+              <CardInfo label={t('home.body.statistic.customer')} number="1576" />
+              <CardInfo label={t('home.body.statistic.mass')} number="8500" />
             </div>
           </div>
         </div>
@@ -78,21 +80,24 @@ const Home = () => {
 
       {/* Introduce */}
       <section>
-        <div className="mx-auto w-full max-w-[1170px] px-[15px]">
+        <div className="mx-auto w-full max-w-[1170px] px-[15px] pt-[15px] lg:pt-0">
           <div className="text-center">
             <h2 className="text-3xl font-bold md:text-5xl">Hop Phat Logistics</h2>
             <p className="text-primary mt-2 text-base font-semibold md:text-xl">
-              Efficiency - Safety - Reliability
+              {t('home.body.introduction.slogan')}
             </p>
           </div>
           <div className="mt-12">
-            <Introduce />
+            <Introduce
+              content={t('home.body.introduction.content')}
+              button={t('home.body.introduction.button')}
+            />
           </div>
         </div>
       </section>
 
       {/* Partner Marquee */}
-      <section className="mt-16 mb-24">
+      <section className="my-16">
         <div className="mx-auto w-full max-w-[1170px] px-[15px]">
           <div className="overflow-hidden">
             <PartnerMarquee />
@@ -107,31 +112,35 @@ const Home = () => {
             <div className="flex w-full flex-col md:flex-row">
               <div className="flex w-full flex-col md:w-4/5">
                 <div className="text-white">
-                  <h2 className="text-3xl font-bold lg:text-4xl">Our Services</h2>
-                  <p className="text-lg">
-                    Hop Phat Logistics offers some services related on the transportation process
-                  </p>
+                  <h2 className="mb-2 text-3xl font-bold lg:text-4xl">
+                    {t('home.body.ourServices.label')}
+                  </h2>
+                  <p className="text-base">{t('home.body.ourServices.subLabel')}</p>
                 </div>
                 <div className="mt-10 flex h-full flex-col flex-wrap md:-ml-[15px] md:flex-row">
                   <CardServices
-                    icon={Plane}
-                    title="Service 1"
-                    desc="Providing Sea Freight Transportation Services"
+                    icon={Truck}
+                    title={t('home.body.ourServices.serviceList.land.label')}
+                    desc={t('home.body.ourServices.serviceList.land.content')}
+                    button={t('home.body.ourServices.serviceList.land.button')}
                   />
                   <CardServices
                     icon={Plane}
-                    title="Service 1"
-                    desc="Providing Sea Freight Transportation Services"
+                    title={t('home.body.ourServices.serviceList.air.label')}
+                    desc={t('home.body.ourServices.serviceList.air.content')}
+                    button={t('home.body.ourServices.serviceList.air.button')}
                   />
                   <CardServices
-                    icon={Plane}
-                    title="Service 1"
-                    desc="Providing Sea Freight Transportation Services"
+                    icon={Ship}
+                    title={t('home.body.ourServices.serviceList.sea.label')}
+                    desc={t('home.body.ourServices.serviceList.sea.content')}
+                    button={t('home.body.ourServices.serviceList.sea.button')}
                   />
                   <CardServices
-                    icon={Plane}
-                    title="Service 1"
-                    desc="Providing Sea Freight Transportation Services"
+                    icon={Package}
+                    title={t('home.body.ourServices.serviceList.support.label')}
+                    desc={t('home.body.ourServices.serviceList.support.content')}
+                    button={t('home.body.ourServices.serviceList.support.button')}
                   />
                 </div>
               </div>
@@ -151,7 +160,7 @@ const Home = () => {
       <section>
         <div className="mx-auto w-full max-w-[1170px] px-[15px]">
           <div className="text-center text-3xl font-bold text-black lg:text-4xl">
-            <p>Our Quotation</p>
+            <p>{t('home.body.ourQuotation.label')}</p>
           </div>
           <div className="mt-14 mb-24">
             <Quotation />
@@ -164,11 +173,19 @@ const Home = () => {
         <div className="mx-auto w-full max-w-[1170px] px-[15px]">
           <div className="w-full">
             <div className="text-center text-3xl font-bold text-black lg:text-4xl">
-              <p>Our Location</p>
+              <p>{t('home.body.ourLocation.label')}</p>
             </div>
             <div className="mt-12 w-full">
               <div className="flex flex-col md:flex-row">
-                <Location />
+                <Location
+                  city={t('home.body.ourLocation.city')}
+                  addressLabel={t('home.body.ourLocation.address.label')}
+                  address={t('home.body.ourLocation.address.content')}
+                  phoneNumberLabel={t('home.body.ourLocation.phoneNumber.label')}
+                  phoneNumber={t('home.body.ourLocation.phoneNumber.content')}
+                  emailLabel={t('home.body.ourLocation.email.label')}
+                  email={t('home.body.ourLocation.email.content')}
+                />
                 <Map />
               </div>
             </div>

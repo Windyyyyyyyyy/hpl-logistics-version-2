@@ -1,16 +1,59 @@
 import { Link } from 'react-router';
 import WhiteLogo from '../../../assets/images/white-hpl-logo.png';
 import { Facebook, Linkedin } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+  const footerLst = [
+    {
+      title: t('home.footer.quickLinks.label'),
+      links: [
+        {
+          title: t('home.footer.quickLinks.subItems.about'),
+          link: '/about',
+        },
+        {
+          title: t('home.footer.quickLinks.subItems.news'),
+          link: '/news',
+        },
+        {
+          title: t('home.footer.quickLinks.subItems.tracking'),
+          link: '/tracking',
+        },
+        {
+          title: t('home.footer.quickLinks.subItems.ourPartner'),
+          link: '/about',
+        },
+      ],
+    },
+    {
+      title: t('home.footer.services.label'),
+      links: [
+        {
+          title: t('home.footer.services.subItems.sea'),
+          link: '/services/sea-freight',
+        },
+        {
+          title: t('home.footer.services.subItems.land'),
+          link: '/services/land-transportation',
+        },
+        {
+          title: t('home.footer.services.subItems.air'),
+          link: '/services/air-freight',
+        },
+      ],
+    },
+  ];
+
   return (
     <footer>
-      <div className="relative bg-secondary-one text-white">
+      <div className="bg-secondary-one relative text-white">
         <div className="mx-auto w-full max-w-[1170px]">
           <div className="flex flex-row flex-wrap py-12">
             <div className="w-full px-[15px] pb-7 lg:w-2/5">
               <aside className="flex flex-col">
-                <div className="mb-6 h-full w-full 2sm:w-2/5 lg:w-2/4">
+                <div className="2sm:w-2/5 mb-6 h-full w-full lg:w-2/4">
                   <Link to="/">
                     <img src={WhiteLogo} alt="Logo HPL" className="object-cover" />
                   </Link>
@@ -34,7 +77,25 @@ const Footer = () => {
                 </div>
               </aside>
             </div>
-            <div className="w-full px-[15px] pb-7 2sm:w-2/4 lg:w-1/5 lg:pb-0">
+            {footerLst.map((item, index) => (
+              <div key={index} className="2sm:w-2/4 w-full px-[15px] pb-7 lg:w-1/5 lg:pb-0">
+                <aside className="flex flex-col">
+                  <div className="mb-6 text-xl font-semibold">
+                    <h3>{item.title}</h3>
+                  </div>
+                  <ul className="text-base">
+                    {item.links.map((link, idx) => (
+                      <li key={idx} className="py-2">
+                        <Link to={link.link} className="hover:text-secondary-two">
+                          {link.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </aside>
+              </div>
+            ))}
+            {/* <div className="2sm:w-2/4 w-full px-[15px] pb-7 lg:w-1/5 lg:pb-0">
               <aside className="flex flex-col">
                 <div className="mb-6 text-xl font-semibold">
                   <h3>Quick Links</h3>
@@ -63,7 +124,7 @@ const Footer = () => {
                 </ul>
               </aside>
             </div>
-            <div className="w-full px-[15px] pb-7 2sm:w-2/4 lg:w-1/5 lg:pb-0">
+            <div className="2sm:w-2/4 w-full px-[15px] pb-7 lg:w-1/5 lg:pb-0">
               <aside className="flex flex-col items-start">
                 <div className="mb-6 text-xl font-semibold">
                   <h3>Services</h3>
@@ -86,18 +147,16 @@ const Footer = () => {
                   </li>
                 </ul>
               </aside>
-            </div>
+            </div> */}
             <div className="px-[15px] sm:w-full lg:w-1/5">
               <aside className="flex flex-col">
                 <div className="mb-6 text-xl font-semibold">
-                  <h3>Contact</h3>
+                  <h3>{t('home.footer.contact.label')}</h3>
                 </div>
                 <div className="text-base">
-                  <p className="py-2">
-                    585 Tung Thien Vuong, Ward 12, District 8, Ho Chi Minh City
-                  </p>
-                  <p className="py-2">+(028) 221 15 806</p>
-                  <p className="py-2">info@hopphatlog.com</p>
+                  <p className="py-2">{t('home.footer.contact.subItems.address')}</p>
+                  <p className="py-2">{t('home.footer.contact.subItems.phone')}</p>
+                  <p className="py-2">{t('home.footer.contact.subItems.email')}</p>
                 </div>
               </aside>
             </div>
