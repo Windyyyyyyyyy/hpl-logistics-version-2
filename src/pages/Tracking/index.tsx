@@ -13,6 +13,7 @@ const Tracking = () => {
     <section>
       <div>
         <Banner
+          imageUrl=""
           title="Tracking"
           routes={[
             { label: 'Home', stringUrl: '', active: false },
@@ -40,20 +41,20 @@ const Tracking = () => {
                     Container Number / Bill of Lading Code
                     <span className="text-red-500">*</span>
                   </label>
-                  <div className="mt-2 flex flex-col 2sm:flex-row 2sm:gap-4">
+                  <div className="2sm:flex-row 2sm:gap-4 mt-2 flex flex-col">
                     <input
                       id="tracking"
                       name="tracking"
                       type="text"
                       required
-                      className="relative block w-full appearance-none rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-500 focus:z-10 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary"
+                      className="focus:border-primary focus:ring-primary relative block w-full appearance-none rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-500 focus:z-10 focus:ring-2 focus:outline-none"
                       placeholder="Enter Container Number / Bill of Lading Code"
                       value={trackingNumber}
                       onChange={(e) => setTrackingNumber(e.target.value)}
                     />
                     <button
                       type="submit"
-                      className="inline-flex items-center justify-center gap-2 rounded-md border border-transparent bg-primary px-6 py-2 text-sm font-medium text-white shadow-sm transition-colors duration-200 hover:bg-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 max-2sm:mt-3"
+                      className="bg-primary hover:bg-primary focus:ring-primary max-2sm:mt-3 inline-flex items-center justify-center gap-2 rounded-md border border-transparent px-6 py-2 text-sm font-medium text-white shadow-sm transition-colors duration-200 focus:ring-2 focus:ring-offset-2 focus:outline-none"
                     >
                       Search
                     </button>
