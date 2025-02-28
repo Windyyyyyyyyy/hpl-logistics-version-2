@@ -5,38 +5,9 @@ import 'swiper/css/navigation';
 import './ServicesCarousel.css';
 import { ChevronRight } from 'lucide-react';
 import { Pagination } from 'swiper/modules';
+import { ServicesCarouselProps } from '../../../../types';
 
-const ServicesCarousel = () => {
-  const services = [
-    {
-      imageUrl: '',
-      label: 'International Shipping',
-    },
-    {
-      imageUrl: '',
-      label: 'Domestic Shipping',
-    },
-    {
-      imageUrl: '',
-      label: 'Custom Declaration',
-    },
-    {
-      imageUrl: '',
-      label: 'Import and Export Authorization',
-    },
-    {
-      imageUrl: '',
-      label: 'Sea Freight',
-    },
-    {
-      imageUrl: '',
-      label: 'Air Freight',
-    },
-    {
-      imageUrl: '',
-      label: 'Land Transportation',
-    },
-  ];
+const ServicesCarousel = (props: ServicesCarouselProps) => {
   return (
     <div className="flex flex-col items-center gap-6">
       <div className="service-carousel w-full">
@@ -61,9 +32,9 @@ const ServicesCarousel = () => {
           }}
           className="mySwiper"
         >
-          {services.map((service, index) => (
+          {props.services.map((service, index) => (
             <SwiperSlide key={index} className="px-[15px]">
-              <div className="h-full overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300 hover:shadow-lg">
+              <div className="h-full w-full overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300 hover:shadow-lg">
                 {/* Image container with aspect ratio */}
                 <div className="relative h-48 overflow-hidden bg-gray-200 md:h-56 lg:h-64">
                   <img
@@ -90,7 +61,7 @@ const ServicesCarousel = () => {
           to="/services"
           className="bg-primary flex items-center rounded px-5 py-3 text-base font-bold text-white"
         >
-          <p className="mr-2">See more</p>
+          <p className="mr-2">{props.button}</p>
           <ChevronRight />
         </Link>
       </div>
