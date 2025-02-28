@@ -32,6 +32,7 @@ import ServiceImage from '../../assets/images/services.webp';
 import CardServices from './components/CardServices';
 import { Plane, Truck, Ship, Package } from 'lucide-react';
 import Quotation from './components/Quotation';
+import Background from '../../assets/images/background_image.jpg';
 import { useTranslation } from 'react-i18next';
 
 // export default Home;
@@ -48,9 +49,9 @@ const Home = () => {
 
           {/* Responsive Image */}
           <img
-            src="https://kflv.vn/wp-content/uploads/2024/05/hban-scaled.jpg"
+            src={Background}
             alt="Background"
-            className="absolute inset-0 z-[-2] h-full w-full object-cover"
+            className="absolute z-[-2] h-full w-full object-cover"
           />
 
           {/* Text Content */}
