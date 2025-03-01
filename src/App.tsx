@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router';
+import { HashRouter, Route, Routes } from 'react-router';
 import { About, Contact, Home, News, PageNotFound, Services, Tracking } from './pages';
 import MainLayout from './layout';
 import SeaFreight from './pages/Services/components/SeaFreight';
@@ -9,7 +9,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 const AppRoutes = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainLayout />}>
@@ -27,7 +27,7 @@ const AppRoutes = () => {
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
