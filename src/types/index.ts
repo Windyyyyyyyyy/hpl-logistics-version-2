@@ -72,3 +72,13 @@ export interface ServicesCarouselProps {
   services: Array<ServicesProps>;
   button: string;
 }
+
+export interface ServicesComponentProps {
+  title: string;
+  desc: string;
+  image: string;
+  whyChooseLabel: string;
+  whyChoose: Array<{ h4: string; span: string }>;
+  servicesLabel: string;
+  services: Array<string>;
+}

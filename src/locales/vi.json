@@ -171,5 +171,175 @@
       "button": "Xem thêm"
     },
     "ourPartner": "Đối tác của chúng tôi"
+  },
+
+  "services": {
+    "layout": {
+      "banner": {
+        "title": "Dịch vụ",
+        "stringUrl": {
+          "baseUrl": "Trang chủ",
+          "currentUrl": "Dịch vụ"
+        }
+      },
+      "sidebar": {
+        "sea": "Vận chuyển đường biển",
+        "air": "Vận chuyển hàng không",
+        "land": "Vận chuyển đường bộ",
+        "support": "Dịch vụ hỗ trợ"
+      },
+      "ourCommitment": {
+        "label": "CAM KẾT",
+        "desc": "Chúng tôi cam kết cung cấp dịch vụ tuyệt vời và vô song để đảm bảo sự hài lòng của tất cả khách hàng. Bất kể báo giá của bạn nằm ở đâu hoặc hàng hóa của bạn, phạm vi tiếp cận toàn cầu, tính linh hoạt tại địa phương và mạng lưới chiến lược của chúng tôi cho phép chúng tôi cung cấp các giải pháp hậu cần sáng tạo và tiết kiệm chi phí."
+      },
+      "contact": {
+        "label": "Bạn có thắc mắc hoặc cần bất kỳ sự trợ giúp nào cho tư vấn công việc?",
+        "button": "LIÊN HỆ"
+      }
+    },
+    "air": {
+      "title": "Vận Chuyển Hàng Không",
+      "desc": "Dịch vụ Vận Chuyển Hàng Không của chúng tôi cung cấp giải pháp vận chuyển nhanh chóng, đáng tin cậy và an toàn cho các lô hàng khẩn cấp và có giá trị cao. Với mạng lưới toàn cầu rộng lớn và quan hệ đối tác với các hãng hàng không hàng đầu, chúng tôi đảm bảo hàng hóa của bạn đến nơi một cách nhanh chóng và an toàn.",
+      "whyChoose": {
+        "label": "Tại Sao Chọn Dịch Vụ Vận Chuyển Hàng Không Của Chúng Tôi?",
+        "content": {
+          "fastReliable": {
+            "label": "Nhanh Chóng & Đáng Tin Cậy",
+            "desc": "Thời gian vận chuyển ngắn cho các lô hàng khẩn cấp."
+          },
+          "globalNetwork": {
+            "label": "Mạng Lưới Toàn Cầu",
+            "desc": "Quan hệ đối tác mạnh mẽ với các hãng hàng không đảm bảo phạm vi phủ sóng toàn cầu."
+          },
+          "secureHandling": {
+            "label": "Xử Lý An Toàn",
+            "desc": "Lý tưởng cho hàng hóa có giá trị cao và dễ vỡ."
+          },
+          "flexibleOptions": {
+            "label": "Tùy Chọn Vận Chuyển Linh Hoạt",
+            "desc": "Lựa chọn dịch vụ nhanh, tiêu chuẩn hoặc tiết kiệm tùy theo mức độ khẩn cấp và ngân sách."
+          },
+          "customsSupport": {
+            "label": "Hỗ Trợ Thủ Tục Hải Quan",
+            "desc": "Quy trình tài liệu và thông quan suôn sẻ."
+          }
+        }
+      },
+      "airServices": {
+        "label": "Dịch vụ vận chuyển hàng không bao gồm: ",
+        "express": "Vận Chuyển Hàng Không Nhanh",
+        "standard": "Vận Chuyển Hàng Không Tiêu Chuẩn & Tiết Kiệm",
+        "dangerousGoods": "Xử Lý Hàng Nguy Hiểm",
+        "tempControl": "Vận Chuyển Hàng Hóa Kiểm Soát Nhiệt Độ"
+      }
+    },
+    "sea": {
+      "title": "Vận Chuyển Đường Biển",
+      "desc": "Dịch vụ Vận Chuyển Đường Biển của chúng tôi cung cấp giải pháp vận chuyển chi phí thấp và đáng tin cậy cho các lô hàng lớn trên phạm vi quốc tế. Dù bạn cần vận chuyển nguyên container (FCL) hay hàng lẻ (LCL), chúng tôi đều có giải pháp phù hợp với nhu cầu của bạn.",
+      "whyChoose": {
+        "label": "Tại Sao Chọn Dịch Vụ Vận Chuyển Đường Biển Của Chúng Tôi?",
+        "content": {
+          "globalNetwork": {
+            "label": "Mạng Lưới Toàn Cầu",
+            "desc": "Hợp tác với các hãng tàu lớn để đảm bảo vận chuyển liền mạch đến các cảng trên toàn thế giới."
+          },
+          "shippingOptions": {
+            "label": "Tùy Chọn Vận Chuyển Linh Hoạt",
+            "desc": "Chọn FCL để sử dụng độc quyền container hoặc LCL để tối ưu hóa chi phí."
+          },
+          "transitTime": {
+            "label": "Thời Gian Vận Chuyển Đáng Tin Cậy",
+            "desc": "Lịch trình tàu cố định và tuyến đường hiệu quả để đảm bảo giao hàng đúng hẹn."
+          },
+          "price": {
+            "label": "Giá Cả Cạnh Tranh",
+            "desc": "Giải pháp tiết kiệm chi phí cho nhu cầu vận Chuyển đường biển của bạn."
+          },
+          "doorToDoor": {
+            "label": "Giải Pháp Giao Hàng Tận Nơi",
+            "desc": "Từ cảng đến điểm đến cuối cùng, chúng tôi quản lý toàn bộ quá trình logistics."
+          }
+        }
+      },
+      "seaServices": {
+        "label": "Dịch vụ vận chuyển đường biến bao gồm: ",
+        "fcl": "Hàng Nguyên Container (FCL)",
+        "lcl": "Hàng Lẻ (LCL)",
+        "custom": "Thông Quan & Tài Liệu Hải Quan",
+        "warehousing": "Kho Bãi & Lưu Trữ"
+      }
+    },
+    "land": {
+      "title": "Vận Chuyển Đường Bộ",
+      "desc": "Dịch vụ Vận Chuyển Đường Bộ của chúng tôi cung cấp giải pháp linh hoạt, đáng tin cậy và tiết kiệm chi phí cho các lô hàng nội địa và xuyên biên giới. Dù là vận chuyển hàng hóa nhỏ hay nguyên xe Chuyển, chúng tôi đảm bảo giao hàng an toàn và đúng hẹn.",
+      "whyChoose": {
+        "label": "Tại Sao Chọn Dịch Vụ Vận Chuyển Đường Bộ Của Chúng Tôi?",
+        "content": {
+          "extensiveNetwork": {
+            "label": "Mạng Lưới Rộng Khắp",
+            "desc": "Phạm vi phủ sóng cho cả vận Chuyển nội địa và xuyên biên giới."
+          },
+          "deliveryOptions": {
+            "label": "Tùy Chọn Giao Hàng Linh Hoạt",
+            "desc": "FTL cho lô hàng lớn, LTL để tiết kiệm chi phí."
+          },
+          "onTime": {
+            "label": "Đúng Giờ & Đáng Tin Cậy",
+            "desc": "Tuyến đường tối ưu đảm bảo giao hàng đúng hạn."
+          },
+          "specialHandling": {
+            "label": "Vận Chuyển Chuyên Biệt",
+            "desc": "Vận tải đông lạnh và hàng hóa quá khổ có sẵn."
+          },
+          "tracking": {
+            "label": "Theo Dõi Thời Gian Thực",
+            "desc": "Giám sát lô hàng của bạn ở mọi giai đoạn."
+          }
+        }
+      },
+      "landServices": {
+        "label": "Dịch vụ vận chuyển đường bộ bao gồm: ",
+        "ftl": "Vận Tải Nguyên Xe (FTL)",
+        "ltl": "Vận Tải Hàng Lẻ (LTL)",
+        "express": "Vận Tải Nhanh & Xuyên Biên Giới",
+        "specialized": "Hàng Đông Lạnh & Quá Khổ"
+      }
+    },
+    "support": {
+      "title": "Dịch Vụ Hỗ Trợ",
+      "desc": "Dịch vụ Hỗ Trợ của chúng tôi đảm bảo trải nghiệm logistics mượt mà bằng cách cung cấp hỗ trợ chuyên nghiệp về thủ tục hải quan, kho bãi, đóng gói và tài liệu. Với đội ngũ tận tâm, chúng tôi giúp bạn tối ưu hóa chuỗi cung ứng và giảm thiểu trì hoãn.",
+      "whyChoose": {
+        "label": "Tại Sao Chọn Dịch Vụ Hỗ Trợ Của Chúng Tôi?",
+        "content": {
+          "endToEnd": {
+            "label": "Hỗ Trợ Toàn Diện",
+            "desc": "Hỗ trợ logistics trọn gói cho tất cả các phương thức vận chuyển."
+          },
+          "customsExpertise": {
+            "label": "Chuyên Gia Thông Quan",
+            "desc": "Thủ tục nhập/xuất khẩu nhanh chóng và đơn giản."
+          },
+          "secureWarehousing": {
+            "label": "Kho Bãi An Toàn",
+            "desc": "Giải pháp lưu trữ ngắn hạn và dài hạn."
+          },
+          "insurance": {
+            "label": "Bảo Hiểm Vận Chuyển",
+            "desc": "Bảo vệ hàng hóa của bạn khỏi rủi ro mất mát hoặc hư hỏng."
+          },
+          "customerSupport": {
+            "label": "Hỗ Trợ Khách Hàng 24/7",
+            "desc": "Dịch vụ hỗ trợ tận tâm cho mọi nhu cầu logistics của bạn."
+          }
+        }
+      },
+      "supportServices": {
+        "label": "Dịch vụ hỗ trợ của chúng tôi bao gồm: ",
+        "customs": "Môi Giới & Thông Quan",
+        "warehousing": "Lưu Kho & Phân Phối",
+        "packing": "Đóng Gói & Đóng Thùng Hàng",
+        "consulting": "Bảo Hiểm Vận Chuyển & Tư Vấn Chuỗi Cung Ứng"
+      }
+    }
   }
 }

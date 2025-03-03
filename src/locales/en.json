@@ -168,5 +168,174 @@
       "button": "See More"
     },
     "ourPartner": "Our Partners"
+  },
+  "services": {
+    "layout": {
+      "banner": {
+        "title": "Services",
+        "stringUrl": {
+          "baseUrl": "Home",
+          "currentUrl": "Services"
+        }
+      },
+      "sidebar": {
+        "sea": "Sea Freight",
+        "air": "Air Freight",
+        "land": "Land Transportation",
+        "support": "Support Services"
+      },
+      "ourCommitment": {
+        "label": "OUR COMMITMENT",
+        "desc": "We are committed to providing excellent and unparalleled service to ensure the satisfaction of all customers. No matter where your quote is located or your cargo, our global reach, local flexibility, and strategic networks empower us to deliver innovative and cost-effective logistic solutions."
+      },
+      "contact": {
+        "label": "Have you question or need any help for work consultant?",
+        "button": "CONTACT US"
+      }
+    },
+    "air": {
+      "title": "Air Freight",
+      "desc": "Our Air Freight Services provide a fast, reliable, and secure shipping solution for urgent and high-value shipments. With an extensive global network and partnerships with leading airlines, we ensure your cargo reaches its destination quickly and safely.",
+      "whyChoose": {
+        "label": "Why Choose Our Air Freight?",
+        "content": {
+          "fastReliable": {
+            "label": "Fast & Reliable",
+            "desc": "Quick transit times for urgent shipments."
+          },
+          "globalNetwork": {
+            "label": "Global Network",
+            "desc": "Strong airline partnerships ensuring worldwide coverage."
+          },
+          "secureHandling": {
+            "label": "Secure Handling",
+            "desc": "Ideal for high-value and fragile goods."
+          },
+          "flexibleOptions": {
+            "label": "Flexible Shipping Options",
+            "desc": "Choose express, standard, or economy services based on urgency and budget."
+          },
+          "customsSupport": {
+            "label": "Customs Clearance Assistance",
+            "desc": "Smooth documentation and clearance process."
+          }
+        }
+      },
+      "airServices": {
+        "label": "Our Air Freight Services Include:",
+        "express": "Express Air Freight",
+        "standard": "Standard & Economy Air Freight",
+        "dangerousGoods": "Dangerous Goods Handling",
+        "tempControl": "Temperature-Controlled Cargo"
+      }
+    },
+    "sea": {
+      "title": "Sea Freight",
+      "desc": "Our Sea Freight Services offer a cost-effective and reliable solution for transporting large shipments across international waters. Whether you need Full Container Load (FCL) or Less than Container Load (LCL), we provide tailored solutions to meet your shipping needs.",
+      "whyChoose": {
+        "label": "Why Choose Our Sea Freight?",
+        "content": {
+          "globalNetwork": {
+            "label": "Global Network",
+            "desc": "We partner with major carriers to ensure seamless shipping to ports worldwide."
+          },
+          "shippingOptions": {
+            "label": "Flexible Shipping Options",
+            "desc": "Choose between FCL for exclusive container use or LCL for shared space to optimize cost."
+          },
+          "transitTime": {
+            "label": "Reliable Transit Times",
+            "desc": "Scheduled sailings and efficient routing for on-time delivery."
+          },
+          "price": {
+            "label": "Competitive Pricing",
+            "desc": "Cost-effective solutions for your sea freight needs."
+          },
+          "oorToDoor": {
+            "label": "Door-to-Door Solutions",
+            "desc": "From port to final destination, we manage the entire logistics process."
+          }
+        }
+      },
+      "seaServices": {
+        "label": "Our Sea Freight Services Include:",
+        "fcl": "Full Container Load (FCL)",
+        "lcl": "Less than Container Load (LCL)",
+        "custom": "Customs Clearance & Documentation",
+        "warehousing": "Warehouse/Storage Solutions"
+      }
+    },
+    "land": {
+      "title": "Land Transportation",
+      "desc": "Our Land Transportation Services offer a cost-effective, flexible, and reliable solution for domestic and cross-border shipments. Whether you need trucking for small parcels or full truckloads, we ensure safe and timely delivery to your destination.",
+      "whyChoose": {
+        "label": "Why Choose Our Land Transportation?",
+        "content": {
+          "extensiveNetwork": {
+            "label": "Extensive Network",
+            "desc": "Covering domestic and cross-border transport."
+          },
+          "deliveryOptions": {
+            "label": "Flexible Delivery Options",
+            "desc": "FTL for large shipments, LTL for cost-effective transport."
+          },
+          "onTime": {
+            "label": "Reliable & On-Time",
+            "desc": "Optimized routes ensure timely delivery."
+          },
+          "specialHandling": {
+            "label": "Specialized Transport",
+            "desc": "Refrigerated trucking and oversized cargo transport available."
+          },
+          "tracking": {
+            "label": "Real-Time Tracking",
+            "desc": "Monitor your shipment’s journey at every stage."
+          }
+        }
+      },
+      "landServices": {
+        "label": "Our Land Transportation Services Include:",
+        "ftl": "Full Truck Load (FTL)",
+        "ltl": "Less than Truck Load (LTL)",
+        "express": "Express & Cross-Border Transport",
+        "specialized": "Refrigerated & Oversized Cargo"
+      }
+    },
+    "support": {
+      "title": "Support Services",
+      "desc": "Our Support Services ensure a seamless logistics experience by providing expert assistance in customs clearance, warehousing, packaging, and documentation. With our dedicated team, we help streamline your supply chain and minimize delays.",
+      "whyChoose": {
+        "label": "Why Choose Our Support Services?",
+        "content": {
+          "endToEnd": {
+            "label": "End-to-End Assistance",
+            "desc": "Comprehensive logistics support for all transportation modes."
+          },
+          "customsExpertise": {
+            "label": "Customs Clearance Expertise",
+            "desc": "Hassle-free import/export documentation and clearance."
+          },
+          "secureWarehousing": {
+            "label": "Secure Warehousing",
+            "desc": "Short-term and long-term storage solutions."
+          },
+          "insurance": {
+            "label": "Freight Insurance",
+            "desc": "Protect your cargo against damage or loss."
+          },
+          "customerSupport": {
+            "label": "24/7 Customer Support",
+            "desc": "Dedicated assistance for all your logistics needs."
+          }
+        }
+      },
+      "supportServices": {
+        "label": "Our Support Services Include:",
+        "customs": "Customs Brokerage & Clearance",
+        "warehousing": "Warehousing & Distribution",
+        "packing": "Cargo Packing & Crating",
+        "consulting": "Freight Insurance & Supply Chain Consulting"
+      }
+    }
   }
 }

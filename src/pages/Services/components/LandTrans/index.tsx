@@ -1,25 +1,50 @@
 import LandTransImage from '../../../../assets/images/land-transportation.png';
+import ServicesComponent from '..';
+import { useTranslation } from 'react-i18next';
 
 const LandTransportation = () => {
+  const { t } = useTranslation();
+
+  const whyChooseLandTransport = [
+    {
+      h4: `✅ ${t('services.land.whyChoose.content.extensiveNetwork.label')}: `,
+      span: t('services.land.whyChoose.content.extensiveNetwork.desc'),
+    },
+    {
+      h4: `✅ ${t('services.land.whyChoose.content.deliveryOptions.label')}: `,
+      span: t('services.land.whyChoose.content.deliveryOptions.desc'),
+    },
+    {
+      h4: `✅ ${t('services.land.whyChoose.content.onTime.label')}: `,
+      span: t('services.land.whyChoose.content.onTime.desc'),
+    },
+    {
+      h4: `✅ ${t('services.land.whyChoose.content.specialHandling.label')}: `,
+      span: t('services.land.whyChoose.content.specialHandling.desc'),
+    },
+    {
+      h4: `✅ ${t('services.land.whyChoose.content.tracking.label')}: `,
+      span: t('services.land.whyChoose.content.tracking.desc'),
+    },
+  ];
+
+  const servicesLandTransport = [
+    t('services.land.landServices.ftl'),
+    t('services.land.landServices.ltl'),
+    t('services.land.landServices.express'),
+    t('services.land.landServices.specialized'),
+  ];
+
   return (
-    <div>
-      <div className="mb-8">
-        <img
-          src={LandTransImage}
-          alt="Airplane wing during sunset"
-          className="h-24 w-full object-cover md:h-32 lg:h-64"
-        />
-      </div>
-      <div className="bg-gray-50 p-6 text-gray-800">
-        <h1 className="mb-4 text-2xl font-bold uppercase">Land Transportation</h1>
-        <p className="mb-4">
-          We provide General, Hazardous, and Project cargo trucking and packing service with
-          commitment from our trusted warehouse. We offer secure and hassle-free re-packing service
-          to our customer's transloading cargo. We also provide manpower or labour service for both
-          stuffing and unstuffing of cargo inside and outside Free Trade Zone.
-        </p>
-      </div>
-    </div>
+    <ServicesComponent
+      title={t('services.land.title')}
+      desc={t('services.land.desc')}
+      image={LandTransImage}
+      whyChoose={whyChooseLandTransport}
+      whyChooseLabel={t('services.land.whyChoose.label')}
+      services={servicesLandTransport}
+      servicesLabel={t('services.land.landServices.label')}
+    />
   );
 };
 

@@ -2,13 +2,16 @@ import Banner from '../../components/Banner';
 import { Link, Outlet, useLocation } from 'react-router';
 import { ChevronRight } from 'lucide-react';
 import CommitmentImage from '../../assets/images/commitment.jpg';
+import { useTranslation } from 'react-i18next';
+import ServicesBanner from '../../assets/images/services_banner.webp';
 
 const Services = () => {
+  const { t } = useTranslation();
   const services = [
-    { name: 'Sea Freight', path: 'sea-freight' },
-    { name: 'Air Freight', path: 'air-freight' },
-    { name: 'Land Transportation', path: 'land-transportation' },
-    { name: 'Support Services', path: 'support-services' },
+    { name: t('services.layout.sidebar.sea'), path: 'sea-freight' },
+    { name: t('services.layout.sidebar.air'), path: 'air-freight' },
+    { name: t('services.layout.sidebar.land'), path: 'land-transportation' },
+    { name: t('services.layout.sidebar.support'), path: 'support-services' },
   ];
 
   const location = useLocation();
@@ -18,11 +21,15 @@ const Services = () => {
     <section>
       <div>
         <Banner
-          imageUrl=""
-          title="Services"
+          imageUrl={ServicesBanner}
+          title={t('services.layout.banner.title')}
           routes={[
-            { label: 'Home', stringUrl: '', active: false },
-            { label: 'Services', stringUrl: 'services', active: true },
+            { label: t('services.layout.banner.stringUrl.baseUrl'), stringUrl: '', active: false },
+            {
+              label: t('services.layout.banner.stringUrl.currentUrl'),
+              stringUrl: 'services',
+              active: true,
+            },
           ]}
         />
       </div>
@@ -35,14 +42,13 @@ const Services = () => {
                 <Link
                   key={index}
                   to={`/services/${service.path}`}
-                  className={`hover:bg-primary flex cursor-pointer items-center justify-between border-b bg-gray-100 p-4 hover:text-white ${selectedService === service.path ? 'bg-primary text-white' : ''}`}
+                  className={`hover:bg-primary mb-1 flex cursor-pointer items-center justify-between bg-gray-100 p-4 hover:text-white ${selectedService === service.path ? 'bg-primary text-white' : ''}`}
                 >
-                  <span>{service.name}</span>
+                  <span className="text-base">{service.name}</span>
                   <ChevronRight strokeWidth={3} />
                 </Link>
               ))}
             </div>
-
             {/* Content */}
             <div className="md:col-span-3">
               <Outlet />
@@ -58,12 +64,11 @@ const Services = () => {
 
                 {/* Content Section */}
                 <div className="flex w-full flex-col">
-                  <h2 className="mb-4 text-xl font-bold">OUR COMMITMENT</h2>
+                  <h2 className="mb-4 text-xl font-bold">
+                    {t('services.layout.ourCommitment.label')}
+                  </h2>
                   <p className="text-justify text-sm leading-relaxed">
-                    We are committed to providing excellent and unparalleled service to ensure the
-                    satisfaction of all customers. No matter where your quote is located or your
-                    cargo, our global reach, local flexibility, and strategic networks empower us to
-                    deliver innovative and cost-effective logistic solutions.
+                    {t('services.layout.ourCommitment.desc')}
                   </p>
                 </div>
               </div>
@@ -71,10 +76,10 @@ const Services = () => {
           </div>
           <div className="mt-12 flex flex-col items-center justify-center space-y-4 rounded-lg bg-gray-50 p-6 md:flex-row md:space-y-0 md:space-x-4">
             <p className="mb-4 text-center text-lg md:mb-0 md:text-left">
-              Have you question or need any help for work consultant
+              {t('services.layout.contact.label')}
             </p>
             <button className="bg-primary hover:bg-primary rounded px-6 py-3 text-white">
-              CONTACT US
+              {t('services.layout.contact.button')}
             </button>
           </div>
         </div>

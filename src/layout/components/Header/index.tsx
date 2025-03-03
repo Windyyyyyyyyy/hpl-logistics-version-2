@@ -184,7 +184,7 @@ const Header = () => {
                   <div key={language} className="relative">
                     <Link
                       to="/"
-                      className={`mx-3 py-3 font-medium uppercase ${i18n.resolvedLanguage === language ? (scrolled ? 'text-black' : 'text-white') : 'text-gray-400'}`}
+                      className={`mx-3 py-3 font-medium uppercase ${i18n.resolvedLanguage === language ? (scrolled ? 'text-black' : 'text-white') : 'text-gray-500'}`}
                       onClick={() => i18n.changeLanguage(language)}
                     >
                       {language}
