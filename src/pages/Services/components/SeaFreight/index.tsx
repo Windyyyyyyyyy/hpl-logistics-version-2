@@ -1,40 +1,50 @@
-import SeaFrieghtImage from '../../../../assets/images/sea-freight.jpg';
+import SeaFreightImage from '../../../../assets/images/sea-freight.jpg';
+import ServicesComponent from '..';
+import { useTranslation } from 'react-i18next';
 
 const SeaFreight = () => {
+  const { t } = useTranslation();
+
+  const whyChooseSeaFreight = [
+    {
+      h4: `✅ ${t('services.sea.whyChoose.content.globalNetwork.label')}: `,
+      span: t('services.sea.whyChoose.content.globalNetwork.desc'),
+    },
+    {
+      h4: `✅ ${t('services.sea.whyChoose.content.shippingOptions.label')}: `,
+      span: t('services.sea.whyChoose.content.shippingOptions.desc'),
+    },
+    {
+      h4: `✅ ${t('services.sea.whyChoose.content.transitTime.label')}: `,
+      span: t('services.sea.whyChoose.content.transitTime.desc'),
+    },
+    {
+      h4: `✅ ${t('services.sea.whyChoose.content.price.label')}: `,
+      span: t('services.sea.whyChoose.content.price.desc'),
+    },
+    {
+      h4: `✅ ${t('services.sea.whyChoose.content.doorToDoor.label')}: `,
+      span: t('services.sea.whyChoose.content.doorToDoor.desc'),
+    },
+  ];
+
+  const servicesSeaFreight = [
+    t('services.sea.seaServices.fcl'),
+    t('services.sea.seaServices.lcl'),
+    t('services.sea.seaServices.custom'),
+    t('services.sea.seaServices.warehousing'),
+  ];
+
   return (
-    <div>
-      <div className="mb-8">
-        <img
-          src={SeaFrieghtImage}
-          alt="Airplane wing during sunset"
-          className="h-24 w-full object-cover md:h-32 lg:h-64"
-        />
-      </div>
-      <div className="bg-gray-50 p-6 text-gray-800">
-        <h1 className="mb-4 text-2xl font-bold uppercase">Sea Freight</h1>
-        <p className="mb-4">
-          Loyo logistics prioritizes personal service – our land freight experts identify business
-          goals and transportation issues in your supply chain through clear communication,
-          thoughtful collaboration, and dedicated follow-through to create solutions that deliver.
-        </p>
-        <p className="mb-4">
-          We combine simple, standardized land freight services with a host of customizable options
-          to achieve the ideal balance of lead-time, capacity, frequency, and cost. Whether it means
-          providing day-definite delivery or hauling hazardous cargo, Loyo Logistics knows the key
-          to a successful supply chain is a synergized relationship with you.
-        </p>
-        <h2 className="mb-2 text-xl font-semibold">
-          Our professional transportation services include:
-        </h2>
-        <ul className="list-disc space-y-2 pl-6">
-          <li>Same day/next day collections</li>
-          <li>FTL-Full Trucking Load</li>
-          <li>LTL-Less Trucking Load / Consolidation Service</li>
-          <li>Site/City Courier</li>
-          <li>Collection & Distribution Service</li>
-        </ul>
-      </div>
-    </div>
+    <ServicesComponent
+      title={t('services.sea.title')}
+      desc={t('services.sea.desc')}
+      image={SeaFreightImage}
+      whyChooseLabel={t('services.sea.whyChoose.label')}
+      whyChoose={whyChooseSeaFreight}
+      servicesLabel={t('services.sea.seaServices.label')}
+      services={servicesSeaFreight}
+    />
   );
 };
 

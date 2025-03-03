@@ -5,6 +5,7 @@ import SeaFreight from './pages/Services/components/SeaFreight';
 import AirFreight from './pages/Services/components/AirFreight';
 import LandTransportation from './pages/Services/components/LandTrans';
 import SupportServices from './pages/Services/components/SupportServices';
+import ServicesIntro from './pages/Services/components/ServicesIntro';
 import ScrollToTop from './components/ScrollToTop';
 
 const AppRoutes = () => {
@@ -15,7 +16,8 @@ const AppRoutes = () => {
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/services/" element={<Services />}>
+          <Route path="/services" element={<Services />}>
+            <Route index element={<ServicesIntro />} />
             <Route path="sea-freight" element={<SeaFreight />} />
             <Route path="air-freight" element={<AirFreight />} />
             <Route path="land-transportation" element={<LandTransportation />} />
