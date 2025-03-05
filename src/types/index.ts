@@ -51,6 +51,7 @@ export interface NewsCardProps {
 export interface NewsCarouselProps {
   title: string;
   posts: Array<NewsCardProps>;
+  button: string;
 }
 
 export interface QuotationProps {

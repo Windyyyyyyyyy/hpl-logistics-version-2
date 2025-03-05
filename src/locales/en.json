@@ -337,5 +337,89 @@
         "consulting": "Freight Insurance & Supply Chain Consulting"
       }
     }
+  },
+  "news": {
+    "layout": {
+      "banner": {
+        "title": "News",
+        "stringUrl": {
+          "baseUrl": "Home",
+          "currentUrl": "News"
+        }
+      }
+    },
+    "post": {
+      "marketNews": {
+        "title": "Market News"
+      },
+      "specializedNews": {
+        "title": "Specialized News"
+      }
+    },
+    "button": "See More"
+  },
+  "contact": {
+    "title": "Contact",
+    "breadcrumb": {
+      "home": "Home",
+      "contact": "Contact"
+    },
+    "form": {
+      "heading": "Freight Consultation",
+      "contact_information": "Contact Information",
+      "first_last_name": "Full Name",
+      "first_last_name_placeholder": "Enter full name",
+      "phone": "Phone Number",
+      "phone_placeholder": "Enter phone number",
+      "email": "Email",
+      "email_placeholder": "Enter email",
+      "goods_details": "Goods Details",
+      "type_of_goods": "Type of Goods",
+      "type_of_goods_placeholder": "Enter type of goods",
+      "transportation": {
+        "label": "Transportation Method",
+        "options": {
+          "sea": "Ocean Freight",
+          "land": "Land Transportation",
+          "air": "Air Freight"
+        }
+      },
+      "shipment_type": "Type of Shipment",
+      "container_type": "Container Type",
+      "container_number": "Container Number",
+      "weight": "Weight",
+      "weight_placeholder": "Enter weight",
+      "kg": "kg",
+      "volume": "Volume",
+      "volume_placeholder": "Enter volume",
+      "m3": "m³",
+      "origin": "Origin",
+      "origin_placeholder": "Enter origin",
+      "destination": "Destination",
+      "destination_placeholder": "Enter destination",
+      "estimated_departure_date": "Estimated Departure Date",
+      "date_placeholder": "mm/dd/yyyy",
+      "support_services": "Support Services",
+      "cargo_insurance": "Cargo Insurance",
+      "customs_declaration": "Customs Declaration",
+      "other_information": "Other Information",
+      "notes": "Notes (Optional)",
+      "send_button": "Send"
+    }
+  },
+
+  "tracking": {
+    "title": "Tracking",
+    "breadcrumb": {
+      "home": "Home",
+      "tracking": "Tracking"
+    },
+    "lookup": {
+      "title": "Look up bill of lading",
+      "description": "Look up information related to your order using the form below.",
+      "input_label": "Container Number / Bill of Lading Code",
+      "input_placeholder": "Enter Container Number / Bill of Lading Code",
+      "search_button": "Search"
+    }
   }
 }

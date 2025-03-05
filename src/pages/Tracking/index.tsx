@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import Banner from '../../components/Banner';
+import TrackingBannerImage from '../../assets/images/tracking.jpg';
 
 const Tracking = () => {
+  const { t } = useTranslation();
   const [trackingNumber, setTrackingNumber] = useState('');
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -13,11 +16,11 @@ const Tracking = () => {
     <section>
       <div>
         <Banner
-          imageUrl=""
-          title="Tracking"
+          imageUrl={TrackingBannerImage}
+          title={t('tracking.title')}
           routes={[
-            { label: 'Home', stringUrl: '', active: false },
-            { label: 'Tracking', stringUrl: 'tracking', active: true },
+            { label: t('tracking.breadcrumb.home'), stringUrl: '', active: false },
+            { label: t('tracking.breadcrumb.tracking'), stringUrl: 'tracking', active: true },
           ]}
         />
       </div>
@@ -28,35 +31,33 @@ const Tracking = () => {
             <div className="space-y-6 rounded-lg bg-gray-100 p-8 shadow-sm">
               {/* Header */}
               <div className="text-center">
-                <h1 className="text-3xl font-bold text-gray-900">Look up bill of lading</h1>
-                <p className="mt-2 text-gray-600">
-                  Look up information related to your order using the form below.
-                </p>
+                <h1 className="text-3xl font-bold text-gray-900">{t('tracking.lookup.title')}</h1>
+                <p className="mt-2 text-gray-600">{t('tracking.lookup.description')}</p>
               </div>
 
               {/* Form */}
               <form onSubmit={handleSubmit} className="mt-8 space-y-6">
                 <div>
                   <label htmlFor="tracking" className="block text-sm font-medium text-gray-700">
-                    Container Number / Bill of Lading Code
+                    {t('tracking.lookup.input_label')}
                     <span className="text-red-500">*</span>
                   </label>
-                  <div className="2sm:flex-row 2sm:gap-4 mt-2 flex flex-col">
+                  <div className="mt-2 flex flex-col gap-2 sm:flex-row sm:items-center">
                     <input
                       id="tracking"
                       name="tracking"
                       type="text"
                       required
                       className="focus:border-primary focus:ring-primary relative block w-full appearance-none rounded border border-gray-300 px-3 py-2 text-sm text-gray-900 placeholder-gray-500 focus:z-10 focus:ring-2 focus:outline-none"
-                      placeholder="Enter Container Number / Bill of Lading Code"
+                      placeholder={t('tracking.lookup.input_placeholder')}
                       value={trackingNumber}
                       onChange={(e) => setTrackingNumber(e.target.value)}
                     />
                     <button
                       type="submit"
-                      className="bg-primary hover:bg-primary focus:ring-primary max-2sm:mt-3 inline-flex items-center justify-center gap-2 rounded-md border border-transparent px-6 py-2 text-sm font-medium text-white shadow-sm transition-colors duration-200 focus:ring-2 focus:ring-offset-2 focus:outline-none"
+                      className="bg-primary hover:bg-primary focus:ring-primary rounded-md border border-transparent px-7 py-2 text-sm font-medium text-white shadow-sm transition-colors duration-200 focus:ring-2 focus:ring-offset-2 focus:outline-none max-sm:mt-3 sm:w-1/4"
                     >
-                      Search
+                      {t('tracking.lookup.search_button')}
                     </button>
                   </div>
                 </div>

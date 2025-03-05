@@ -341,5 +341,88 @@
         "consulting": "Bảo Hiểm Vận Chuyển & Tư Vấn Chuỗi Cung Ứng"
       }
     }
+  },
+  "news": {
+    "layout": {
+      "banner": {
+        "title": "Tin tức",
+        "stringUrl": {
+          "baseUrl": "Trang chủ",
+          "currentUrl": "Tin tức"
+        }
+      }
+    },
+    "post": {
+      "marketNews": {
+        "title": "Tin tức thị trường"
+      },
+      "specializedNews": {
+        "title": "Tin tức chuyên ngành"
+      }
+    },
+    "button": "Xem thêm"
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "breadcrumb": {
+      "home": "Trang chủ",
+      "contact": "Liên hệ"
+    },
+    "form": {
+      "heading": "Tư vấn cước vận chuyển",
+      "contact_information": "Thông tin liên hệ",
+      "first_last_name": "Họ và tên",
+      "first_last_name_placeholder": "Nhập họ và tên",
+      "phone": "Số điện thoại",
+      "phone_placeholder": "Nhập số điện thoại",
+      "email": "Email",
+      "email_placeholder": "Nhập Email",
+      "goods_details": "Chi tiết hàng hóa",
+      "type_of_goods": "Loại hàng hóa",
+      "type_of_goods_placeholder": "Nhập loại hàng hóa",
+      "transportation": {
+        "label": "Phương thức vận chuyển",
+        "options": {
+          "sea": "Vận chuyển đường biển",
+          "land": "Vận chuyển đường bộ",
+          "air": "Vận chuyển hàng không"
+        }
+      },
+      "shipment_type": "Loại lô hàng",
+      "container_type": "Loại container",
+      "container_number": "Số container",
+      "weight": "Trọng lượng",
+      "weight_placeholder": "Nhập trọng lượng",
+      "kg": "kg",
+      "volume": "Thể tích",
+      "volume_placeholder": "Nhập thể tích",
+      "m3": "m³",
+      "origin": "Nơi đi",
+      "origin_placeholder": "Nhập nơi đi",
+      "destination": "Nơi đến",
+      "destination_placeholder": "Nhập nơi đến",
+      "estimated_departure_date": "Ngày khởi hành dự kiến",
+      "date_placeholder": "mm/dd/yyyy",
+      "support_services": "Dịch vụ hỗ trợ",
+      "cargo_insurance": "Bảo hiểm hàng hóa",
+      "customs_declaration": "Khai báo hải quan",
+      "other_information": "Thông tin khác",
+      "notes": "Ghi chú (tùy chọn)",
+      "send_button": "Gửi"
+    }
+  },
+  "tracking": {
+    "title": "Theo dõi",
+    "breadcrumb": {
+      "home": "Trang chủ",
+      "tracking": "Theo dõi"
+    },
+    "lookup": {
+      "title": "Tra cứu vận đơn",
+      "description": "Tìm kiếm thông tin liên quan đến đơn hàng của bạn bằng cách sử dụng biểu mẫu dưới đây.",
+      "input_label": "Số container / Mã vận đơn",
+      "input_placeholder": "Nhập số container / Mã vận đơn",
+      "search_button": "Tìm kiếm"
+    }
   }
 }

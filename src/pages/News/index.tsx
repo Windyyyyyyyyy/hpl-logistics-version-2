@@ -3,8 +3,11 @@ import Banner from '../../components/Banner';
 import { NewsCardProps } from '../../types';
 import NewsCarousel from './components/NewsCarousel';
 import initAOS from '../../utils/aos';
+import NewsImageBanner from '../../assets/images/news.jpg';
+import { useTranslation } from 'react-i18next';
 
 const News = () => {
+  const { t } = useTranslation();
   const NewsMarketCards: Array<NewsCardProps> = [
     {
       date: Date.now().toString(),
@@ -48,11 +51,15 @@ const News = () => {
     <section>
       <div>
         <Banner
-          imageUrl=""
-          title="News"
+          imageUrl={NewsImageBanner}
+          title={t('news.layout.banner.title')}
           routes={[
-            { label: 'Home', stringUrl: '', active: false },
-            { label: 'News', stringUrl: 'news', active: true },
+            { label: t('news.layout.banner.stringUrl.baseUrl'), stringUrl: '', active: false },
+            {
+              label: t('news.layout.banner.stringUrl.currentUrl'),
+              stringUrl: 'news',
+              active: true,
+            },
           ]}
         />
       </div>
@@ -60,10 +67,18 @@ const News = () => {
         <div className="mx-auto h-full w-full max-w-[1170px] px-[15px]">
           <div className="flex flex-col gap-16">
             <div data-aos="fade-up">
-              <NewsCarousel title="Market News" posts={NewsMarketCards} />
+              <NewsCarousel
+                title={t('news.post.marketNews.title')}
+                posts={NewsMarketCards}
+                button={t('news.button')}
+              />
             </div>
             <div data-aos="fade-up">
-              <NewsCarousel title="Specialized News" posts={NewsMarketCards} />
+              <NewsCarousel
+                title={t('news.post.specializedNews.title')}
+                posts={NewsMarketCards}
+                button={t('news.button')}
+              />
             </div>
           </div>
         </div>
