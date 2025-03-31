@@ -41,6 +41,7 @@ export interface Banner {
 }
 
 export interface NewsCardProps {
+  _id: string;
   date: string;
   title: string;
   imageUrl: string;
@@ -82,4 +83,10 @@ export interface ServicesComponentProps {
   whyChoose: Array<{ h4: string; span: string }>;
   servicesLabel: string;
   services: Array<string>;
+}
+
+export interface CarouselProps {
+  title: string;
+  posts: Array<NewsCardProps>;
+  button: string;
 }

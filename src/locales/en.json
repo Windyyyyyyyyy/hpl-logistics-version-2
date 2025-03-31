@@ -421,5 +421,16 @@
       "input_placeholder": "Enter Container Number / Bill of Lading Code",
       "search_button": "Search"
     }
+  },
+  "404": {
+    "title": "404",
+    "text": "Not Found",
+    "message": "The resource requested could not be found on this server!",
+    "back_button": "Go Back"
+  },
+  "common": {
+    "home": "Home",
+    "fqa": "FQA",
+    "frequently_asked_questions": "Frequently Asked Questions"
   }
 }

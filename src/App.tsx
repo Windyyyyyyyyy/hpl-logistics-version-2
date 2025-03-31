@@ -7,6 +7,8 @@ import LandTransportation from './pages/Services/components/LandTrans';
 import SupportServices from './pages/Services/components/SupportServices';
 import ServicesIntro from './pages/Services/components/ServicesIntro';
 import ScrollToTop from './components/ScrollToTop';
+import NewsDetail from './pages/News/components/NewsDetail';
+import NewsCarousel from './pages/News/components/NewsCarousel';
 
 const AppRoutes = () => {
   return (
@@ -23,7 +25,10 @@ const AppRoutes = () => {
             <Route path="land-transportation" element={<LandTransportation />} />
             <Route path="support-services" element={<SupportServices />} />
           </Route>
-          <Route path="/news" element={<News />} />
+          <Route path="/news" element={<News />}>
+            <Route index element={<NewsCarousel />} />
+            <Route path=":id" element={<NewsDetail />} />
+          </Route>
           <Route path="/contact" element={<Contact />} />
           <Route path="/tracking" element={<Tracking />} />
         </Route>
