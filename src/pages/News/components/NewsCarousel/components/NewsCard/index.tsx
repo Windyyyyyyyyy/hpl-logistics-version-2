@@ -1,24 +1,17 @@
 import React from 'react';
-import type { NewsCardProps } from '../../../../types';
-
-const truncateText = (text: string, maxLength: number = 150) => {
-  if (text.length <= maxLength) return text;
-  return text.slice(0, maxLength) + '...';
-};
+import type { NewsCardProps } from '../../../../../../types';
+import truncateText from '../../../../../../utils/truncateText';
+import formatDate from '../../../../../../utils/formatDate';
+import { Link } from 'react-router';
 
 const NewsCard: React.FC<NewsCardProps> = ({
+  _id,
   date,
   title,
   imageUrl,
   imageAlt = 'News thumbnail',
   description,
 }) => {
-  // Format date to DD/MM/YYYY
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-GB');
-  };
-
   return (
     <div className="h-full overflow-hidden rounded-lg bg-white shadow-md transition-shadow duration-300 hover:shadow-lg">
       {/* Image container with aspect ratio */}
@@ -26,7 +19,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
         <img
           src={imageUrl}
           alt={imageAlt}
-          className="h-full w-full bg-gray-black object-cover transition-transform duration-300 hover:scale-105"
+          className="bg-gray-black h-full w-full object-cover transition-transform duration-300 hover:scale-105"
         />
       </div>
 
@@ -46,8 +39,8 @@ const NewsCard: React.FC<NewsCardProps> = ({
         </div>
 
         {/* Title */}
-        <h2 className="mb-2 line-clamp-2 cursor-pointer text-lg font-semibold text-gray-800 transition-colors duration-200 hover:text-primary md:text-xl">
-          {title}
+        <h2 className="hover:text-primary mb-2 line-clamp-2 cursor-pointer text-lg font-semibold text-gray-800 transition-colors duration-200 md:text-xl">
+          <Link to={`${_id}`}>{title}</Link>
         </h2>
         {/* Description */}
         <p className="mb-4 line-clamp-3 text-sm text-gray-600">{truncateText(description)}</p>

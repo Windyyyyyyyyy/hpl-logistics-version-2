@@ -424,5 +424,16 @@
       "input_placeholder": "Nhập số container / Mã vận đơn",
       "search_button": "Tìm kiếm"
     }
+  },
+  "404": {
+    "title": "404",
+    "text": "Không tìm thấy",
+    "message": "Không tìm thấy tài nguyên được yêu cầu trên máy chủ này!",
+    "back_button": "Trở về"
+  },
+  "common": {
+    "home": "Trang chủ",
+    "fqa": "Câu hỏi thường gặp",
+    "frequently_asked_questions": "Các câu hỏi thường gặp"
   }
 }
